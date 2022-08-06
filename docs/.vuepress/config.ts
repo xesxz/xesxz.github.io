@@ -119,14 +119,6 @@ export default defineUserConfig({
   },
   // 插件配置
   plugins: [
-    nextSearchPlugin({
-      fullText: true,
-      placeholder: "搜索",
-      frontmatter: {
-        tag: "标签",
-        category: "分类",
-      },
-    }),
     //          docsearchPlugin({
     //
     //             }),
