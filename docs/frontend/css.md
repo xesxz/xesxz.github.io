@@ -18,7 +18,6 @@
 ```
 transition: background-color 1s linear;
 ```
-
-
+![An image](dizuo_icon_bg_act.png)
 
 
