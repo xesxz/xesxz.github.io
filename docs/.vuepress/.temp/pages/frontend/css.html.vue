@@ -11,5 +11,5 @@
     }
 </code></pre></div><h2 id="过渡" tabindex="-1"><a class="header-anchor" href="#过渡" aria-hidden="true">#</a> 过渡</h2>
 <div class="language-text ext-text"><pre v-pre class="language-text"><code>transition: background-color 1s linear;
-</code></pre></div><p><img src="@source/frontend/111.JPG" alt="alt 属性文本"></p>
+</code></pre></div><p><img src="@source/frontend/dizuo_icon_bg_act.png" alt="alt 属性文本"></p>
 </div></template>
