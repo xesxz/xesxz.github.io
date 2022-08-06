@@ -2,7 +2,7 @@
 
 name: Build and deploy
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "14"
-          
+
       # 缓存 node_modules
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -38,16 +38,16 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-            
+
       # 如果缓存没有命中，安装依赖，根据实际来改，也可以是npm，这里是用的yarn
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
- 
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: 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
           # 部署到 gh-pages 分支
           BRANCH: gh-pages
           # 部署目录为 VuePress 的默认输出目录，这里需要根据项目的目录进行修改
