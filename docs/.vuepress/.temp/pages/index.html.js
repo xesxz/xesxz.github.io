@@ -6,7 +6,16 @@ export const data = {
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1659765067000,
+    "contributors": [
+      {
+        "name": "张磊",
+        "email": "631298983@qq.com",
+        "commits": 1
+      }
+    ]
+  },
   "filePathRelative": "README.md"
 }
 

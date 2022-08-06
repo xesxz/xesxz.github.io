@@ -6,7 +6,21 @@ export const data = {
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "git": {},
+  "git": {
+    "updatedTime": 1659767479000,
+    "contributors": [
+      {
+        "name": "xesxz",
+        "email": "leeycheung@gmail.com",
+        "commits": 1
+      },
+      {
+        "name": "张磊",
+        "email": "631298983@qq.com",
+        "commits": 1
+      }
+    ]
+  },
   "filePathRelative": "xesxz.md"
 }
 
