@@ -20,4 +20,4 @@ transition: background-color 1s linear;
 ```
 
 
-![alt 属性文本](./dizuo_icon_bg_act.png)
+![alt 属性文本](./img/dizuo_icon_bg_act.png)
