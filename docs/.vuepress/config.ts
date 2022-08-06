@@ -111,6 +111,7 @@ export default defineUserConfig({
     }),
     lang: 'zh-CN',
     title: 'note',
+     base: '/',
     description: '打怪升级之旅~',
        markdown: {
             code: {
