@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/deploy
 
       - name: Build and Deploy
         uses: xesxz/xesxz.github.io
