@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { localTheme } from "./theme";
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
-const { searchPlugin } = require("@vuepress/plugin-search");
 import { nextSearchPlugin } from "vuepress-plugin-next-search";
 const navbar = [
   {
