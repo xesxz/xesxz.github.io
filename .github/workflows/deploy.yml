@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: xesxz/xesxz.github.io
+        uses: https://github.com/xesxz/xesxz.github.io
 
       - name: Build and Deploy
-        uses: xesxz/xesxz.github.io
+        uses: https://github.com/xesxz/xesxz.github.io
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: xesxz/xesxz.github.io
