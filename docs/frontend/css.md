@@ -20,4 +20,4 @@ transition: background-color 1s linear;
 ```
 
 
-![alt 属性文本](https://raw.githubusercontent.com/xesxz/xesxz.github.io/7906c3544e23ab870327475ac74e4c19fe849027/docs/.vuepress/public/img/111.JPG)
+![alt 属性文本](./111.JPG)
