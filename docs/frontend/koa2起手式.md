@@ -21,8 +21,6 @@ nuxt.js    vue.js
 
 ```
 
-![](youdaonote-images/DC9AEF415B5C46F0B15D083CE8801E63.png)
-
 person.js
 
 ```javascript
@@ -53,7 +51,7 @@ const mongoose = require("mongoose");
 const dbConfig = require("./dbs/config");
 ```
 
-使用、连接数据库
+使用、 连接数据库
 
 ```javascript
 mongoose.connect(dbConfig.dbs, {
