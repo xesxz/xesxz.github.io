@@ -13,6 +13,14 @@
 
 [tippyjs](https://atomiks.github.io/tippyjs/)
 
+> Reveal CSS animation as you scroll down a page
+
+[wowjs](https://wowjs.uk/)
+
+> Reveal CSS animation as you scroll down a page
+
+[aos.css](https://michalsnik.github.io/aos/)
+
 > 一个简单的基于 vue.js 的无缝滚动插件
 
 [vue-seamless-scroll](https://chenxuan0000.github.io/vue-seamless-scroll/zh/)
