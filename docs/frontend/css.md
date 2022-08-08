@@ -1,23 +1,76 @@
 ## 居中
-```
-  .box{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: cyan;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-    }
-```
 
-
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: cyan;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+```
 
 ## 过渡
-```
+
+```css
 transition: background-color 1s linear;
 ```
 
+## flex 弹性盒布局，最后一行左对齐
 
-![alt 属性文本](./img/dizuo_icon_bg_act.png)
+```css
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul:after {
+  content: "";
+  width: 32%;
+}
+ul li {
+  width: 32%;
+  height: 40px;
+  margin-bottom: 10px;
+  background: #2fbaff;
+}
+```
+
+<iframe id="iframe" height=100 width=80% frameborder=0 allowfullscreen="true" src="/html/flex.html">  
+ </iframe>
+
+## [iconfont 卡片 hover 样式](https://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2)
+
+```css
+.rec-card:hover {
+  transform: scale(1.05);
+  background: #fff;
+}
+
+.rec-card {
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+```
+
+## [Echarts 实现隐藏 x 轴，y 轴，刻度线，网格](https://www.cnblogs.com/xiaojun-zxj/p/8327683.html)
+
+```javascript
+    xAxis: {
+          splitLine: {
+            show: false  //是否显示分割线
+          },
+          axisLine: {
+            show: false  //是否显示x轴的坐标轴
+          },
+          axisLabel: {
+            show: false //是否显示x轴的label
+          },
+          axisTick: {
+            show: false //是否显示x轴的刻度
+          }
+        },
+
+```

@@ -11,6 +11,7 @@ const navbar = [
         children: [
           { text: "JavaScript", link: "/frontend/javascript" },
           { text: "CSS", link: "/frontend/css" },
+          { text: "待定", link: "/frontend/a" },
         ],
       },
 
@@ -19,14 +20,8 @@ const navbar = [
         children: [
           { text: "Vue", link: "/frontend/vue" },
           { text: "Git", link: "/frontend/git" },
-        ],
-      },
-
-      {
-        text: "可视化",
-        children: [
-          { text: "浏览器原生绘图", link: "/frontend/浏览器原生绘图.html" },
-          { text: "Apache Echarts", link: "/frontend/echarts" },
+          { text: "Plugin", link: "/frontend/plugin" },
+          { text: "Linux", link: "/linux" },
         ],
       },
     ],
