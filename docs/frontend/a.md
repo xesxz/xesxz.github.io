@@ -12,4 +12,4 @@
 
 ## css
 
-[flex 弹性盒布局，最后一行左对齐](/html/b.html)
+[flex 弹性盒布局，最后一行左对齐](/b.html)
