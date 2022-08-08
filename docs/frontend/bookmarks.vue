@@ -1,10 +1,10 @@
 <template>
-<div>404</div>
+<div>bookmarks</div>
 </template>
 
 <script>
 export default {
-  name: "404"
+  name: "bookmarks"
 }
 </script>
 

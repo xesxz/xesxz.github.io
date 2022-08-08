@@ -2,6 +2,11 @@ import { defineUserConfig } from "vuepress";
 import { localTheme } from "./theme";
 const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 import { nextSearchPlugin } from "vuepress-plugin-next-search";
+import { path } from "@vuepress/utils";
+const {
+  registerComponentsPlugin,
+} = require("@vuepress/plugin-register-components");
+
 const navbar = [
   {
     text: "前端",
@@ -45,11 +50,11 @@ const navbar = [
   },
 
   {
-    text: "后端",
+    text: "其他",
     children: [
       {
-        text: "Python",
-        children: [{ text: "Python核心语法", link: "/backend/Python" }],
+        text: "书签",
+        children: [{ text: "书签", link: "/other/bookmark" }],
       },
       {
         text: "Go",
@@ -113,13 +118,8 @@ export default defineUserConfig({
   },
   // 插件配置
   plugins: [
-    //          docsearchPlugin({
-    //
-    //             }),
-    //             registerComponentsPlugin({
-    //                 components: {
-    //                     Home: path.resolve(__dirname, './components/Home.vue'),
-    //                 }
-    //             }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
   ],
 });
