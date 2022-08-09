@@ -65,6 +65,20 @@ export default {
             {
               name:'iconify',
               url:'https://iconify.design/'
+            },
+            {
+              name:'fontawesome-icons',
+              url:'https://fontawesome.com/icons'
+            }
+          ]
+        },
+
+        {
+          title:"工具",
+          bookmark:[
+            {
+              name:'阿里云区划',
+              url:'http://datav.aliyun.com/portal/school/atlas/area_selector#&lat=30.332329214580188&lng=106.72278672066881&zoom=3.5'
             }
           ]
         }

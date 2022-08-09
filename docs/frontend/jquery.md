@@ -120,3 +120,25 @@ fragment 是创建一个文档碎片，比如要在 ul 下面动态添加是个 
 - css() - 设置或返回样式属性
 
 https://www.runoob.com/jquery/jquery-css.html 菜鸟教程
+
+## 循环
+
+```javascript
+$.ajax({
+  method: "get",
+  url: "./product.json",
+  success(res) {
+    console.log(res);
+    let content = "";
+    const data = res.data.list;
+    data.forEach((item) => {
+      content += `
+           <li>
+            <img src="${item.image}" alt="">
+            </li>
+          `;
+    });
+    document.getElementsByTagName("ul")[0].innerHTML = content;
+  },
+});
+```

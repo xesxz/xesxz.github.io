@@ -42,6 +42,11 @@ ul li {
 <iframe id="iframe" height=100 width=80% frameborder=0 allowfullscreen="true" src="/html/flex.html">  
  </iframe>
 
+## hover-label-animation
+
+<iframe id="iframe" height=50 width=80% frameborder=0 allowfullscreen="true" src="/html/hover-label-animation.html">  
+ </iframe>
+
 ## [iconfont 卡片 hover 样式](https://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2)
 
 ```css
@@ -54,6 +59,10 @@ ul li {
   transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 ```
+
+## iconfont 的使用方法
+
+[iconfont 的使用方法](https://blog.csdn.net/qq_39176732/article/details/81390423)
 
 ## [Echarts 实现隐藏 x 轴，y 轴，刻度线，网格](https://www.cnblogs.com/xiaojun-zxj/p/8327683.html)
 
@@ -74,3 +83,43 @@ ul li {
         },
 
 ```
+
+## 水球
+
+```javascript
+option = {
+  backgroundColor: "#050038",
+  title: {
+    text: "ewfw",
+    textStyle: {
+      fontWeight: "normal",
+      fontSize: 25,
+      color: "rgb(97, 142, 205)",
+    },
+  },
+  series: [
+    {
+      type: "liquidFill",
+      radius: "45%",
+      center: ["50%", "50%"],
+      data: [0.5, 0.5, 0.5],
+      backgroundStyle: {
+        borderWidth: 1,
+        color: "rgb(255,0,255,0.1)",
+      },
+      label: {
+        normal: {
+          formatter: (0.5 * 100).toFixed(2) + "%",
+          textStyle: {
+            fontSize: 50,
+          },
+        },
+      },
+    },
+  ],
+};
+```
+
+## scss- 条件语句 循环语句使用
+
+[scss- 条件语句 循环语句使用](https://blog.csdn.net/weixin_40054326/article/details/103054843)

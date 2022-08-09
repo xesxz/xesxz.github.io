@@ -16,6 +16,7 @@ const navbar = [
         children: [
           { text: "JavaScript", link: "/frontend/javascript" },
           { text: "CSS", link: "/frontend/css" },
+          { text: "Jquery", link: "/frontend/jquery" },
           { text: "待定", link: "/frontend/a" },
         ],
       },
@@ -44,7 +45,7 @@ const navbar = [
       },
       {
         text: "gis知识",
-        children: [{ text: "openlayers", link: "/gis/openlayers" }],
+        children: [{ text: "gis知识", link: "/gis/knowledge" }],
       },
     ],
   },
@@ -57,11 +58,8 @@ const navbar = [
         children: [{ text: "书签", link: "/other/bookmark" }],
       },
       {
-        text: "Go",
-        children: [
-          { text: "Go核心语法", link: "/backend/Go" },
-          { text: "Go Web开发", link: "/backend/Web-for-Go" },
-        ],
+        text: "面试",
+        children: [{ text: "面试", link: "/frontend/interview" }],
       },
     ],
   },
