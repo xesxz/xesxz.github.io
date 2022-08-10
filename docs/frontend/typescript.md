@@ -4,30 +4,20 @@
 
 # [TypeScript 入门教程](https://juejin.im/entry/587e09281b69e600584cd363)
 
-
-
-<font face="微软雅黑"  color=pink >为什么需要使用它？</font>
-
-1. 静态类型检查
-2. 
-
-
-
-
-
-
-
-VUE装饰器
-vue装饰器有两种
+VUE 装饰器
+vue 装饰器有两种
 
 vue-class-component(官方版)
+
 ```js
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import Vue from "vue";
+import Component from "vue-class-component";
 ```
+
 vue-property-decorator(社区版)
+
 ```js
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from "vue-property-decorator";
 ```
 
 `cnpm i vue-property-decorator -S`
