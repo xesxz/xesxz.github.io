@@ -19,6 +19,19 @@
 transition: background-color 1s linear;
 ```
 
+## 单行文本溢出
+
+```css
+div {
+  width: 400px;
+  height: 100px;
+  border: 1px solid;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+```
+
 ## flex 弹性盒布局，最后一行左对齐
 
 ```css
@@ -123,3 +136,39 @@ option = {
 ## scss- 条件语句 循环语句使用
 
 [scss- 条件语句 循环语句使用](https://blog.csdn.net/weixin_40054326/article/details/103054843)
+
+## 安装 sass
+
+`npm install sass-loader@7.3.1 node-sass@4.14.1 --save-dev `
+
+`npm install node-sass sass-loader --save-dev`
+
+`cnpm install --save less less-loader`
+
+` import less from 'less' Vue.use(less);`
+
+## el-dialog 从底部弹出的动画效果
+
+```css
+@keyframes dialog-fade-in {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes dialog-fade-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+```

@@ -142,3 +142,20 @@ $.ajax({
   },
 });
 ```
+
+## jquery 循环
+
+```javascript
+// $('ul')获取的是一个数组，但是要使用它的方法就  $('ul').html() 这样他取的是第一个
+var list = [
+  {
+    name: "木易杨",
+    src: "https://www.muyiy.cn/",
+  },
+];
+var content = "";
+$.each(list, function (i, val) {
+  content += `<li><a href=${list[i].src} target="_blank">${list[i].name}</a></li>`;
+  $("ul").html(content);
+});
+```

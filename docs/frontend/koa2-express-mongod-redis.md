@@ -1,3 +1,5 @@
+## koa2
+
 https://koa.bootcss.com/
 
 创建 koa2 项目
@@ -134,3 +136,18 @@ node 文件上传
 koa2 server
 
 cnpm i koa2-cors -S
+
+## express
+
+[快速创建一个 express 项目](https://www.expressjs.com.cn/starter/generator.html)
+
+[使用 node 和 express+mongodb 实现数据增删改功能](https://www.cnblogs.com/zhoulifeng/p/10197816.html)
+
+## mongod-redis
+
+```
+1. mongod --dbpath=/Users/workspace/mongodb/db
+2. redis-server
+3. robo
+4. Npm run dev
+```

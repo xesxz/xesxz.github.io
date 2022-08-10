@@ -103,7 +103,7 @@ export default defineUserConfig({
   //   theme: "vdoing",
   lang: "zh-CN",
   title: "xesxz's blog",
-  description: "打怪升级之旅~",
+  description: "让努力看得见~",
   markdown: {
     code: {
       // 不显示行号
