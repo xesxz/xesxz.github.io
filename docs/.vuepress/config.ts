@@ -101,6 +101,16 @@ export default defineUserConfig({
     navbar: navbar,
   }),
   //   theme: "vdoing",
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+      },
+    ],
+  ],
+  enhanceAppFiles: path.resolve(__dirname, "./enhanceApp.js"),
   lang: "zh-CN",
   title: "xesxz's blog",
   description: "让努力看得见~",

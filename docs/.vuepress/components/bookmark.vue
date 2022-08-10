@@ -15,9 +15,6 @@
 </template>
 
 <script>
-
-import 'animate.css';
-
 export default {
   name: "bookmark",
   data(){
@@ -117,6 +114,7 @@ export default {
 </script>
 
 <style scoped>
+
   *{
     list-style: none;
   }
