@@ -20,6 +20,4 @@
 
 <count/>
 
-![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131633432.png?token=AFPLVXSW7TIQ2PQ2O7PT6S3C65RBU)
-
-![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131640037.png?token=AFPLVXTCBBTT7XCVCEADILLC65R2Q)
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131658617.png?token=AFPLVXS6VCZVL5ELG2DBAATC65T5O)
