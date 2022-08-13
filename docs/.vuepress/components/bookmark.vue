@@ -3,7 +3,7 @@
 <div v-for="item in list" :key="item.title">
   <div class="title">{{item.title}}</div>
   <ul class="content">
-    <li v-for="(i,index) in item.bookmark" :key="index" @click="handleClick(i.url)"   class="animate__animated animate__bounceIn">
+    <li v-for="(i,index) in item.bookmark" :key="index" @click="handleClick(i.url)"   class="animate__animated animate__fadeInLeftBig">
       <div class="top">
         <img :src="i.url + 'favicon.ico'" alt="" class="ico">
         {{i.name}}</div>

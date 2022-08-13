@@ -19,3 +19,7 @@
 [vue 使用 qs 向后端传递表单 FormData 参数](https://blog.csdn.net/pz3305636904/article/details/103359522)
 
 <count/>
+
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131633432.png?token=AFPLVXSW7TIQ2PQ2O7PT6S3C65RBU)
+
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131640037.png?token=AFPLVXTCBBTT7XCVCEADILLC65R2Q)

@@ -69,7 +69,11 @@ const navbar = [
     children: [
       {
         text: "容器基础",
-        children: [{ text: "容器核心技术", link: "/container/container" }],
+        children: [
+          { text: "linux", link: "/frontend/linux" },
+          { text: "git", link: "/frontend/git" },
+          { text: "nginx", link: "/frontend/nginx" },
+        ],
       },
       {
         text: "容器编排工具",
