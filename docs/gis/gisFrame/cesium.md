@@ -150,7 +150,7 @@ Cesium.GeoJsonDataSource.load("./data/beijing.geojson").then(function (
 });
 ```
 
-## 加载模型 1
+## 加载模型 12
 
 ```javascript
 var modelentity = viewer.entities.add({
