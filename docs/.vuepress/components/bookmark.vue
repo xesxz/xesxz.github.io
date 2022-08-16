@@ -39,6 +39,10 @@ export default {
               name:'joshwcomeau-blog',
               url:'https://www.joshwcomeau.com/'
             },
+            {
+              name:'dengxiaoning-blog',
+              url:'https://github.com/dengxiaoning'
+            },
 
 
           ]
@@ -46,6 +50,18 @@ export default {
         {
           title:"css工具",
           bookmark:[
+
+
+
+    {
+      name:"netlify",
+          url:"  https://www.netlify.com/ "
+    },
+    {
+      name:'vercel',
+          url:'https://vercel.com/dashboard'
+    },
+
             {
               name:"animate",
               url:"https://animate.style/"

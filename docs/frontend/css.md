@@ -172,3 +172,8 @@ option = {
   }
 }
 ```
+
+## 呼吸
+
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208161129581.png?token=AFPLVXUTCTHYASVQ3A77ECTC7MHUQ)
+[呼吸](http://k21vin.gitee.io/front-end-data-visualization/#/native/pureCSS/loading)
