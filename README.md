@@ -4,6 +4,6 @@
 yarn
 
 
-npm rund ev
+npm rund dev
 
 ```
