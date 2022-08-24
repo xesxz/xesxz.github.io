@@ -20,6 +20,13 @@ git checkout -b dev-zl
 git push origin dev-zl
 ```
 
+```
+git fetch origin dev2   //从远程dev2分支拉取代码到本地
+
+git checkout -b dev origin/dev（新建本地分支对应远程分支，并切换到这个分支）
+
+```
+
 ## svn
 
 update+to+lastest+revision
@@ -49,3 +56,35 @@ npx nrm use taobao
 npx nrm use npm
 
 npm i -g cnpm --registry=https://registry.npm.taobao.org
+
+
+## 忽略配置
+
+```
+.DS_Store
+node_modules
+/dist
+*.zip 
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.zip
+
+```

@@ -1,11 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import { localTheme } from "./theme";
-const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
-import { nextSearchPlugin } from "vuepress-plugin-next-search";
 import { path } from "@vuepress/utils";
 const {
   registerComponentsPlugin,
 } = require("@vuepress/plugin-register-components");
+
+const { docsearchPlugin } = require("@vuepress/plugin-docsearch");
 
 const navbar = [
   {
@@ -132,6 +132,13 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
+    }),
+    docsearchPlugin({
+      appId: "MQ1RWE9J9Y",
+
+      apiKey: "3b0eb52a195d6b126b7399b9b65d4d3d",
+
+      indexName: "xesxz",
     }),
   ],
 });
