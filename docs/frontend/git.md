@@ -113,3 +113,12 @@ pnpm-debug.log*
 *.zip
 
 ```
+
+## docker
+
+```
+ docker run -dp 80:80 docker/getting-started
+
+ docker cp /Users/wk/Downloads/pip 3e805cc23737798772cdac53e139dbbef6e582d0860b4b442f12a734f05f3fbf:/opt/geoserver/data_dir
+
+```
