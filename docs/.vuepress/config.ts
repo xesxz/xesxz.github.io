@@ -17,6 +17,8 @@ const navbar = [
           { text: "JavaScript", link: "/frontend/javascript" },
           { text: "CSS", link: "/frontend/css" },
           { text: "Jquery", link: "/frontend/jquery" },
+          { text: "Typescript", link: "/frontend/typescript" },
+          { text: "Vue", link: "/frontend/vue" },
           { text: "待定", link: "/frontend/a" },
         ],
       },
@@ -24,7 +26,6 @@ const navbar = [
       {
         text: "工程化",
         children: [
-          { text: "Vue", link: "/frontend/vue" },
           { text: "Git", link: "/frontend/git" },
           { text: "Plugin", link: "/frontend/plugin" },
           { text: "Linux", link: "/linux" },
