@@ -1,0 +1,80 @@
+<!--
+ * @Descripttion:
+ * @version:
+ * @Author: zl
+ * @Date: 2022-06-27 15:22:07
+ * @LastEditors: zl
+ * @LastEditTime: 2022-09-20 20:43:23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <style>
+    .box{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      /* font-family:; */
+    }
+    img{
+      width: 100%;
+      height: 100%;
+
+    }
+    .time{
+      width: 260px;
+      position: absolute;
+      left: 65px;
+      top: 16.8%;
+      color: #3264d7;
+      font-weight: 600;
+      background: #fff;
+      font-size: 21px;
+      font-family: PingFang SC;
+
+    }
+    .second{
+      margin-left: 38px;
+    }
+    .day{
+      font-size:0px;
+    }
+
+    .a,.b{
+      font-size: 21px;
+    }
+
+    .b{
+      font-size: 28px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="time">
+      <span class="day">
+        <span class="a"></span>
+        <span class="b"></span>
+      </span>
+      <span class="second"></span>
+
+    </div>
+    <img src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202209202100039.jpg" alt="">
+  </div>
+  <script>
+    var rq = dayjs().format('YYYY-MM-DD')
+   setInterval(() => {
+    document.querySelector('.a').innerHTML = dayjs().format('HH:m:')
+    document.querySelector('.b').innerHTML = dayjs().format('ss')
+   },1000)
+    document.querySelector('.second').innerHTML = rq
+  </script>
+</body>
+</html>
