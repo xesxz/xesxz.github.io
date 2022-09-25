@@ -46,6 +46,12 @@ select.on("select", function (e) {
 });
 ```
 
+## openLayer 点击wms获取对应的属性信息
+通过 `getFeatureInfoUrl`获取url, url请求返回对应的Feature (老版本为`getGetFeatureInfoUrl`)
+可以返回具体的html、json
+
+
+
 ## openLayer 获取图层是 geojson 类型
 
 方法一
