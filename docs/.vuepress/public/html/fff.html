@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-06-27 15:22:07
  * @LastEditors: zl
- * @LastEditTime: 2022-09-20 20:43:23
+ * @LastEditTime: 2022-09-25 18:45:46
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +15,14 @@
   <title>Document</title>
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <style>
+
     .box{
       width: 100vw;
       height: 100vh;
       position: relative;
       /* font-family:; */
     }
-    img{
+    .img{
       width: 100%;
       height: 100%;
 
@@ -53,7 +54,70 @@
       font-size: 28px;
     }
 
+    .wrap{
+      position: absolute;
+  top: 434px;
+  left: 36px;
+height: 20px;
+  width: 317px;
+      overflow: hidden;
+      background: #fff;
+    }
+.line{
 
+  display: flex;
+  height: 5px;
+  width: 1000px;
+
+  animation-name: move;
+animation-duration: 6s;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+
+}
+
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-260px);
+    }
+}
+
+.line div{
+  margin-right: 4px;
+  transform: skew(-20deg);
+  scale: 1.2;
+}
+
+.line .a{
+  height: 100%;
+  width: 9px;
+background: #8ba3f9;
+/* background: red; */
+}
+.line .b{
+  height: 100%;
+  width: 9px;
+background: #b1c5fa;
+/* background: pink; */
+}
+
+.line .c{
+  height: 100%;
+  width: 9px;
+background: #d9e3fc;
+/* background: yellow; */
+}
+.rq{
+  position: absolute;
+  top: 479px;
+  left: 45px;
+  font-family: PingFang SC;
+  color:#f9fbff;
+  font-size: 10px;
+}
   </style>
 </head>
 <body>
@@ -66,10 +130,78 @@
       <span class="second"></span>
 
     </div>
-    <img src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202209202100039.jpg" alt="">
+
+    <div class="rq">
+      <span class="sj">09/18</span> 
+      <span>20时</span>
+    </div>
+<div class="wrap">
+  <div class="line">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    
+       </div>
+</div>
+    <!-- <img class="img" src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202209202100039.jpg" alt=""> -->
+
+    <img class="img" src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202209251832840.jpg" alt="">
+    
   </div>
   <script>
     var rq = dayjs().format('YYYY-MM-DD')
+
+
+    var sj = dayjs().subtract(1,"day").format('MM/DD')
+    document.querySelector('.sj').innerHTML = sj
    setInterval(() => {
     document.querySelector('.a').innerHTML = dayjs().format('HH:mm:')
     document.querySelector('.b').innerHTML = dayjs().format('ss')

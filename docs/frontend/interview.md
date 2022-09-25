@@ -68,8 +68,12 @@ query 要再 url 后面拼接参数，刷新后 params 参数会丢失
 
 js/js/性能优化.xmind
 
-缓存
-强制缓存 协商缓存
+## 缓存
+
+强缓存:不与服务器建立联系 状态码200 disk cache memory cache
+
+
+协商缓存 与服务器建立一次连接 304 modify etag
 
 http1 http2
 http1 明文传输，不支持服务端推送
