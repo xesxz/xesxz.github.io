@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-09-21 17:46:26
  * @LastEditors: zl
- * @LastEditTime: 2022-09-21 17:48:57
+ * @LastEditTime: 2022-09-26 16:48:53
 -->
 ## Shp 数据格式说明
 
@@ -23,10 +23,13 @@ GCJ-02 高德地图（火星坐标系统）、腾讯地图（火星坐标系统�
 4490 政府单位
 
 ## 各种地图服务
+[Web地图服务规范(WMS、WMTS、TMS)简析](https://blog.csdn.net/oYinHeZhiGuang/article/details/115731622)
 
 WMS：
 
 WMTS： 与 wms 最大的区别的采用缓存技术缓解服务器压力
+
+wfs 返回json或者xml这些
 
 
 ## OGC规范
@@ -43,3 +46,9 @@ WMTS： 与 wms 最大的区别的采用缓存技术缓解服务器压力
 ## 倾斜摄影测量与 BIM 技术实现城市三维模型的构建与应用
 
 [倾斜摄影测量与 BIM 技术实现城市三维模型的构建与应用](./倾斜摄影测量与BIM技术实现城市三维模型的构建与应用.md)
+
+
+
+## 互联网地图
+
+`VUE_APP_GIS_BASEMAP_URL:["http://t{0-7}.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=","http://t{0-7}.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="],`
