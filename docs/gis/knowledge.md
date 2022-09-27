@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-09-21 17:46:26
  * @LastEditors: zl
- * @LastEditTime: 2022-09-26 16:48:53
+ * @LastEditTime: 2022-09-27 09:35:56
 -->
 ## Shp 数据格式说明
 
@@ -52,3 +52,23 @@ wfs 返回json或者xml这些
 ## 互联网地图
 
 `VUE_APP_GIS_BASEMAP_URL:["http://t{0-7}.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=","http://t{0-7}.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="],`
+
+
+
+
+## geoserver
+
+配置pdf：将四个jar包复制到指定目录，重启服务
+
+
+跨域：
+
+`C:\geoserver-2.21.1-bin\webapps\geoserver\WEB-INF`
+
+```
+Uncomment following filter to enable CORS
+    <filter-mapping>
+        <filter-name>cross-origin</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ ```
