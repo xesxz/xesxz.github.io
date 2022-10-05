@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-09-21 17:46:26
  * @LastEditors: zl
- * @LastEditTime: 2022-09-21 17:48:57
+ * @LastEditTime: 2022-09-29 10:44:13
 -->
 ## Shp 数据格式说明
 
@@ -14,19 +14,22 @@
 
 WGS84(4326) 标准 gps 系统用的 个人获取不到
 
-天地图（接近于 WGS84 坐标系统的 GCJ2000）
+天地图（接近于 WGS84 坐标系统的 GCJ2000）4490 政府单位
 
 BD-09 百度地图（BD09 坐标系统） 百度坐标系，百度自研，百度地图使用
 
 GCJ-02 高德地图（火星坐标系统）、腾讯地图（火星坐标系统） 火星坐标系，国测局 02 年发布的坐标体系，高德，腾讯等使用。
 
-4490 政府单位
+
 
 ## 各种地图服务
+[Web地图服务规范(WMS、WMTS、TMS)简析](https://blog.csdn.net/oYinHeZhiGuang/article/details/115731622)
 
 WMS：
 
 WMTS： 与 wms 最大的区别的采用缓存技术缓解服务器压力
+
+wfs 返回json或者xml这些
 
 
 ## OGC规范
@@ -43,3 +46,29 @@ WMTS： 与 wms 最大的区别的采用缓存技术缓解服务器压力
 ## 倾斜摄影测量与 BIM 技术实现城市三维模型的构建与应用
 
 [倾斜摄影测量与 BIM 技术实现城市三维模型的构建与应用](./倾斜摄影测量与BIM技术实现城市三维模型的构建与应用.md)
+
+
+
+## 互联网地图
+
+`VUE_APP_GIS_BASEMAP_URL:["http://t{0-7}.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=","http://t{0-7}.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="],`
+
+
+
+
+## geoserver
+
+配置pdf：将四个jar包复制到指定目录，重启服务
+
+
+跨域：
+
+`C:\geoserver-2.21.1-bin\webapps\geoserver\WEB-INF`
+
+```
+Uncomment following filter to enable CORS
+    <filter-mapping>
+        <filter-name>cross-origin</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ ```
