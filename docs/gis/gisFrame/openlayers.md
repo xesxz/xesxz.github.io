@@ -46,11 +46,10 @@ select.on("select", function (e) {
 });
 ```
 
-## openLayer 点击wms获取对应的属性信息
-通过 `getFeatureInfoUrl`获取url, url请求返回对应的Feature (老版本为`getGetFeatureInfoUrl`)
-可以返回具体的html、json
+## openLayer 点击 wms 获取对应的属性信息
 
-
+通过 `getFeatureInfoUrl`获取 url, url 请求返回对应的 Feature (老版本为`getGetFeatureInfoUrl`)
+可以返回具体的 html、json
 
 ## openLayer 获取图层是 geojson 类型
 
@@ -110,6 +109,14 @@ this.map
   .animate({ center: fromLonLat(JSON.parse(info.point)), zoom: 10 }); //同时移动和放大  还可以加一个属性duration: 10000
 ```
 
+## 飞行方式
+
+### animate `view.animate`
+
+### fit view.fit
+
+````
+
 ## 最佳可视范围和限制缩放
 
 [openlayers 中设置地图最佳可视范围和限制缩放](https://blog.csdn.net/qq_34817440/article/details/104232186?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduend~default-2-104232186.nonecase&utm_term=openlayers%E6%98%BE%E7%A4%BA%E5%9C%B0%E5%9B%BE%E8%8C%83%E5%9B%B4&spm=1000.2123.3001.4430)
@@ -164,7 +171,7 @@ this.map
 
 
 
-```
+````
 
 ## 添加的图层居中显示
 
