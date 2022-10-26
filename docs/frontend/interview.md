@@ -64,14 +64,9 @@ vue 在观察到数据变化并没有立即更新 dom，而是将事件循环中
 
 query 要再 url 后面拼接参数，刷新后 params 参数会丢失
 
-## 性能优化
-
-js/js/性能优化.xmind
-
 ## 缓存
 
-强缓存:不与服务器建立联系 状态码200 disk cache memory cache
-
+强缓存:不与服务器建立联系 状态码 200 disk cache memory cache
 
 协商缓存 与服务器建立一次连接 304 modify etag
 

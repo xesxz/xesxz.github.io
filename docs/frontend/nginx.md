@@ -20,6 +20,10 @@ sudo nginx -s stop // 快速停止 nginx
 
 sudo nginx -s quit // 完整有序的停止 nginx/优雅关闭（先服务完已打开的连接）
 
+## nginx
+
+### [nginx 报错](https://blog.csdn.net/weixin_41544124/article/details/86594800)
+
 ```
 
 #user  nobody;

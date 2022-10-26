@@ -179,3 +179,9 @@ this.map
 let extent = layerJson.getSource().getExtent();
 this.map.getView().fit(extent);
 ```
+
+## Openlayers 获取单个要素 feature 的几何类型
+
+`feature.getGeometry().getType()`
+
+`feature.getProperties().geometry instanceof Point`

@@ -50,6 +50,12 @@
 
 [np](https://www.npmjs.com/package/number-precision)
 
+> wkx
+
+[wkx](https://www.npmjs.com/package/wkx)
+
+`geom instanceof Wkx.MultiLineString`
+
 > d3-geo
 
 [d3-geo]()

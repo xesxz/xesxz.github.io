@@ -25,7 +25,3 @@ sudo sh ./shutdown.sh
 http://localhost:7777/dist/
 ./catalina.sh run
 ```
-
-## nginx
-
-### [nginx 报错](https://blog.csdn.net/weixin_41544124/article/details/86594800)

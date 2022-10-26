@@ -17,7 +17,3 @@
 [CROSS-ENV 不同环境配置 ](https://www.cnblogs.com/wpshan/p/11119597.html)
 
 [vue 使用 qs 向后端传递表单 FormData 参数](https://blog.csdn.net/pz3305636904/article/details/103359522)
-
-<count/>
-
-![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208131658617.png?token=AFPLVXS6VCZVL5ELG2DBAATC65T5O)

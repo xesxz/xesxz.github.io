@@ -18,3 +18,17 @@ import { Component, Vue } from "vue-property-decorator";
 
 `cnpm i vue-property-decorator -S`
 https://www.cnblogs.com/shiww/p/11322737.html
+
+### vue.config.js
+
+```javascript
+module.exports = {
+  publicPath: "./",
+  lintOnSave: false,
+  devServer: {
+    port: 8888, // 端口
+    // hot: true,
+    // open: true, // 自动开启浏览器
+  },
+};
+```

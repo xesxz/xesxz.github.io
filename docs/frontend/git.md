@@ -10,6 +10,12 @@ git rm -r --cached .
 git add .
 
 git commit -m 'update .gitignore'
+
+放弃所有的文件修改可以使用 git checkout .  命令。
+
+
+
+
 ```
 
 ## 创建分支
