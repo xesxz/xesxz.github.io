@@ -56,6 +56,14 @@
 
 `geom instanceof Wkx.MultiLineString`
 
+```javascript
+const wkbBuffer = new Buffer(
+  "01020000208A11000002000000ECE8E77AE5025A40F02E7E7D2FAB3E40B1224848E2025A402B32789735AB3E40",
+  "hex"
+);
+const geom = Wkx.Geometry.parse(wkbBuffer);
+```
+
 > d3-geo
 
 [d3-geo]()

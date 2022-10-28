@@ -185,3 +185,25 @@ this.map.getView().fit(extent);
 `feature.getGeometry().getType()`
 
 `feature.getProperties().geometry instanceof Point`
+
+## 坐标系注册
+
+[epsg](https://epsg.io/)
+
+```
+import proj4 from 'proj4'
+import {
+  register
+} from 'ol/proj/proj4'
+
+  proj4.defs("EPSG:4544","+proj=tmerc +lat_0=0 +lon_0=105 +k=1 +x_0=500000 +y_0=0 +ellps=GRS80 +units=m +no_defs +type=crs");
+   register(proj4)
+```
+
+```
+//指定输出坐标
+   format: new GeoJSON({
+      dataProjection: 'EPSG:4544', // 元数据的投影坐标
+      featureProjection: 'EPSG:4326' // 规定要素以哪种坐标显示
+    }),
+```
