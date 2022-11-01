@@ -19,6 +19,7 @@ const navbar = [
           { text: "Jquery", link: "/frontend/jquery" },
           { text: "Typescript", link: "/frontend/typescript" },
           { text: "Vue", link: "/frontend/vue" },
+          { text: "util", link: "/frontend/vue" },
           { text: "待定", link: "/frontend/a" },
         ],
       },
@@ -29,6 +30,7 @@ const navbar = [
           { text: "Git", link: "/frontend/git" },
           { text: "Plugin", link: "/frontend/plugin" },
           { text: "Linux", link: "/linux" },
+          { text: "nginx", link: "/frontend/nginx" },
         ],
       },
     ],
@@ -66,14 +68,13 @@ const navbar = [
   },
 
   {
-    text: "容器",
+    text: "js",
     children: [
       {
-        text: "容器基础",
+        text: "js基础",
         children: [
-          { text: "linux", link: "/frontend/linux" },
+          { text: "utils", link: "/js/utils" },
           { text: "git", link: "/frontend/git" },
-          { text: "nginx", link: "/frontend/nginx" },
         ],
       },
       {

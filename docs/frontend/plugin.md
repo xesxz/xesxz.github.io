@@ -38,6 +38,7 @@
 [vue-lazyload](https://github.com/hilongjw/vue-lazyload)
 
 > Convert wkt to geojson
+
 > [wellknown](https://www.npmjs.com/package/wellknown)
 
 [terraformer-wkt-parser]()

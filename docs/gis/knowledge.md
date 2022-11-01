@@ -9,6 +9,12 @@
 
 ## Shp 数据格式说明
 
+### 格式转换
+
+shp 转 geojson
+
+GDAL 数据转换工具 [mars3d](http://mars3d.cn/dev/guide/data/geojson.html#_4-geojson%E6%A0%BC%E5%BC%8F%E4%BB%8B%E7%BB%8D)
+
 [数据格式说明](https://zhuanlan.zhihu.com/p/362478883)
 
 ## 坐标系
