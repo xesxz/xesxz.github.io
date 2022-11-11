@@ -47,3 +47,5 @@ fill 填充 盒子里面的饼干 我要用其他饼干代替
 join 连接数组变字符串(split 字符串变数组)
 
 concat 连接两个或者更多数组 返回新数组
+
+[cookie,token,session 的一些思考](./cookie,token,session的一些思考.md)

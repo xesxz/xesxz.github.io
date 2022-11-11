@@ -15,6 +15,7 @@ const navbar = [
         text: "前端基础",
         children: [
           { text: "JavaScript", link: "/frontend/javascript" },
+          { text: "目录", link: "/frontend/catalog" },
           { text: "CSS", link: "/frontend/css" },
           { text: "Jquery", link: "/frontend/jquery" },
           { text: "Typescript", link: "/frontend/typescript" },

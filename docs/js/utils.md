@@ -17,3 +17,20 @@ function isInclude(arr, ele) {
   return arr.indexOf(ele) > -1;
 }
 ```
+
+```javascript
+/**
+ * tree转二维
+ */
+    treeToArray(arr) {
+      return arr.reduce((acc, cur) => {
+        if (Array.isArray(cur.children)) {
+          const copyCur = { ...cur };
+          delete copyCur.children;
+          return acc.concat(copyCur, this.treeToArray(cur.children));
+        } else {
+          return acc.concat(cur);
+        }
+      }, []);
+    },
+```

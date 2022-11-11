@@ -32,3 +32,9 @@ module.exports = {
   },
 };
 ```
+
+vue3
+![vue3](https://raw.githubusercontent.com/xesxz/image/main/screenshot202211021014096.png)
+
+vue2
+![vue2](https://raw.githubusercontent.com/xesxz/image/main/screenshot202211021016579.png)
