@@ -32,6 +32,7 @@ const navbar = [
           { text: "Plugin", link: "/frontend/plugin" },
           { text: "Linux", link: "/linux" },
           { text: "nginx", link: "/frontend/nginx" },
+          { text: "webpack&vite", link: "/frontend/webpack" },
         ],
       },
     ],

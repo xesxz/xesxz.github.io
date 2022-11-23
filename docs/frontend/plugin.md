@@ -4,10 +4,16 @@
  * @Author: zl
  * @Date: 2022-06-08 17:20:46
  * @LastEditors: zl
- * @LastEditTime: 2022-08-08 14:34:14
+ * @LastEditTime: 2022-11-17 09:48:08
 -->
 
 ### 插件列表
+
+
+> 开源 Web 富文本编辑器，开箱即用，配置简单
+
+[wangEditor 5](https://www.wangeditor.com/)
+
 
 > tippy.js 是一个优秀的悬浮框插件
 

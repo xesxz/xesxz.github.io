@@ -34,3 +34,7 @@ function isInclude(arr, ele) {
       }, []);
     },
 ```
+
+`new Date().toISOString()`
+
+`new Date(new Date().getTime() + 288e5).toISOString().replace('T', ' ')`
