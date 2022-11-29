@@ -21,6 +21,6 @@ plugin html 生产环境 console
 
 ## vite
 
-[如何为前端项目一键自动添加eslint和prettier的支持](https://juejin.cn/post/7115206210701230088)
+[如何为前端项目一键自动添加eslint和prettier的支持](https://juejin.cn/post/7113563466211786783)
 `yarn create vite-pretty-lint`
 
