@@ -28,7 +28,7 @@ export default {
               url:'https://github.com/'
             },
             {
-              name:'joshwcomeau-blog',
+              name:'codeberg',
               url:'https://codeberg.org'
             }
           ]
