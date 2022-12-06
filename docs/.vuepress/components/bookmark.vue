@@ -20,6 +20,19 @@ export default {
   data(){
     return {
       list:[
+      {
+          title:"仓库",
+          bookmark:[
+            {
+              name:'github',
+              url:'https://github.com/'
+            },
+            {
+              name:'joshwcomeau-blog',
+              url:'https://codeberg.org'
+            }
+          ]
+        },
         {
           title:"博客",
           bookmark:[

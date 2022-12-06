@@ -38,3 +38,34 @@ vue3
 
 vue2
 ![vue2](https://raw.githubusercontent.com/xesxz/image/main/screenshot202211021016579.png)
+
+
+
+
+在vue3中使用reactive定义数组
+```javascript
+
+//方案一
+let data = reactive([{ id: 123, name: 'asd' }])
+
+//赋值的时候  
+ data.length = 0
+    data.push(...res.result)
+
+```
+
+
+```javascript
+//方案二
+let state = reactive({
+  list:[]
+})
+
+//赋值的时候  
+state.list = res.result
+```
+
+
+## vuecli
+
+tailwind  使用vuecli 创建项目后可以使用 `vue add tailwind`添加tailwind
