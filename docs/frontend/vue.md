@@ -69,3 +69,24 @@ state.list = res.result
 ## vuecli
 
 tailwind  使用vuecli 创建项目后可以使用 `vue add tailwind`添加tailwind
+
+
+
+
+
+## 配置代理
+  ```baseURL: '/admin',```
+
+  ```javascript
+    proxy: {
+      '/admin': {
+        target: 'http://221.237.108.102:81',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/admin': ''
+        }
+      },
+    }
+
+    ```

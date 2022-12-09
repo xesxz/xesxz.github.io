@@ -194,3 +194,15 @@ http {
 }
 
 ```
+
+
+
+###  proxy_pass add_header 
+
+反向代理和添加请求头场景
+
+前端项目在nginx下面通过反向代理proxy_pass
+
+后端项目在nginx下面通过响应头add_header
+
+

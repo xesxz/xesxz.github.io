@@ -14,6 +14,26 @@ sudo kill -9 1140 找到 pid 关闭它
 
 ```
 
+
+## 常用命令
+```
+复制文件到文件夹//
+# 将 /home/test.txt 复制到 /tmp/ 文件夹中
+cp /home/test.txt /tmp/
+
+复制文件夹到文件夹
+# 将 /home/downloads/ 文件夹 复制到 /tmp/ 文件夹中
+cp  -r /home/downloads/ /tmp/
+
+在mac系统中加上
+cp -r  ~/Desktop/drag/  ~/Desktop/done
+
+```
+
+
+
+
+
 ## Tomcat
 
 [MAC 下安装配置 Tomcat（小白向）](https://www.jianshu.com/p/69496fb3495e)
