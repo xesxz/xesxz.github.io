@@ -82,3 +82,7 @@ shp 文件中有个 cpg 文件定义文字方式 默认没有应该是选择 GBK
 
 字体
 http://10.1.47.189:18091/geoserver/rest/fonts
+
+## B3dm
+B3dm，Batched 3D Model，成批量的三维模型的意思。
+倾斜摄影数据（例如osgb）、BIM数据（如rvt）、传统三维模型（如obj、dae、3dMax制作的模型等），均可创建此类瓦片。

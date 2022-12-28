@@ -11,13 +11,26 @@ git add .
 
 git commit -m 'update .gitignore'
 
-
 放弃所有的文件修改可以使用 git checkout .  命令。
 
 线上的代码重置到指定时间
 git reset --hard 0563e5ca4d17767e758b0bf3ce40450c8a32d7b6
 git push -f
 ```
+
+
+## git常用命令
+
+
+```
+
+git grep [关键字]
+git blame 文件
+
+
+```
+
+
 
 ## 创建分支
 
