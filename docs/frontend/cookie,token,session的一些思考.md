@@ -2,9 +2,10 @@
 
 ## cookie
 
+
 只有同域的请求会自动携带 cookie
 允许跨域以及携带 cookie 的方案（这样设置响应头就会跨域携带 cookie 啦）
-ps：apifox 还是阔以
+ps：apifox   还是阔以
 
 ### 方案一
 
