@@ -40,6 +40,16 @@ statuss[a].status
 
 
 
+## 
+
+```
+const arr:number[]= [1,4,6,8]
+
+const arr:Array<number>= [1,4,6]
+
+```
+
+
 
 
 

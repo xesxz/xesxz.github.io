@@ -9,6 +9,13 @@
 
 ## Shp 数据格式说明
 
+
+必要的三个文件  shp  shx dbf
+
+
+
+
+
 ### 格式转换
 
 shp 转 geojson

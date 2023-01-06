@@ -199,3 +199,47 @@ globe.globalOverlay.visible && globe.globalOverlay.setPosition(undefined);
 关闭多个弹窗两种方式
 window.mti3d.overlay.remove(item, window.globe);
 overlay.destroy()
+
+
+### 坐标系
+
+Cesium中常用的坐标有两种 **WGS84地理坐标系(104,30)** 和 **笛卡尔空间坐标系Cartesian3**，WGS84地理坐标系包括 WGS84经纬度坐标系（没有实际的对象）和 WGS84弧度坐标系（Cartographic）；
+
+
+cesium加载需使用天地图墨卡托显示的位置才是正确的  vec_w
+
+
+#### 坐标转换
+
+[cnblogs](https://www.cnblogs.com/matanzhang/p/11846929.html)
+经纬度和弧度的转换
+```
+//方法一：
+var longitude = Cesium.Math.toRadians(longitude1); //其中 longitude1为角度
+
+var latitude= Cesium.Math.toRadians(latitude1); //其中 latitude1为角度
+
+var cartographic = new Cesium.Cartographic(longitude, latitude, height)；
+
+//方法二：
+var cartographic= Cesium.Cartographic.fromDegrees(longitude, latitude, height);//其中，longitude和latitude为角度
+
+//方法三：
+var cartographic= Cesium.Cartographic.fromRadians(longitude, latitude, height);//其中，longitude和latitude为弧度
+```
+
+
+
+
+
+## 地形
+
+```
+      terrainProvider: new Cesium.ArcGISTiledElevationTerrainProvider({
+    url: "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+  }),
+
+     terrainProvider : Cesium.createWorldTerrain()
+
+
+```
