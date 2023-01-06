@@ -105,6 +105,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+
+gac () {
+    git add .
+    git commit -m "$1"
+}
+
 alias python3=" /Users/wk/PycharmProjects/pythonProject2/venv/bin/python3.8"
 
 alias rn="rm -rf node_modules"
@@ -114,7 +121,7 @@ alias nd="npm run dev"
 alias ga="git add -A"
 alias gc="git commit -a -m"
 alias gp="git push"
-
+alias gac="gac"
 
 
 
