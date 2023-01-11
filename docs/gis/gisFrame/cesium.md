@@ -243,3 +243,71 @@ var cartographic= Cesium.Cartographic.fromRadians(longitude, latitude, height);/
 
 
 ```
+
+
+## 可学习的框架
+
+supermap
+
+mars3d
+
+
+mti3d
+
+
+x
+
+
+heightReference 
+
+
+1
+面状、点状、广告牌 
+heightReference: HeightReference.CLAMP_TO_GROUND, //贴地
+
+
+2 geojson
+let promise = Cesium.GeoJsonDataSource.load(_geojsondata, {
+
+clampToGround: true
+
+});
+
+3
+线状数据需要设置clampToGround的属性为true。 作者：地理信息技术杂谈 https://www.bilibili.com/read/cv19452276?from=articleDetail 出处：bilibili
+
+
+
+
+```
+  for (var i = 0; i < entities.length; i++) {
+        var entity = entities[i];
+    
+        entity.polygon.material = new Color(12 / 255, 152 / 255, 207 / 255, 1);
+        entity.polygon.outline = false;
+        // entity.polygon.extrudedHeight = 100
+        entity.polygon.outlineWidth = 10;
+        // Cesium 设置Polygon轮廓线outlineWidth宽度
+        entity.polyline = {
+          positions: entity.polygon.hierarchy._value.positions,
+          width: entity.polygon.outlineWidth,
+          material: Color.YELLOW
+      }
+
+```
+
+
+
+
+
+viewer.flyTo 和 viewer.camera.flyTo 区别
+
+前者是飞向一个实体 后者是飞向一个具体的坐标
+
+
+## 底图
+```
+ imageryProvider: createWorldImagery({
+      style: IonWorldImageryStyle.ROAD,
+    }),
+    ```

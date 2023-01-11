@@ -1,0 +1,30 @@
+# vue3学习
+## `app.config`
+
+1.  在main.js里面配置config
+
+```auto
+const app = createApp(App);
+app.config.globalProperties.$user = {
+    name: '梅长苏',
+    weapons: '长剑',
+    title: '刺客'
+}
+```
+
+2.  在template模板中使用
+
+```auto
+<p>姓名：{{$user.name}} </p>
+```
+
+3.  在setup中使用
+
+```auto
+const cns = getCurrentInstance()
+console.log(cns.appContext.config.globalProperties.$user)
+
+ // or
+ const {proxy} = getCurrentInstance()
+ console.log(proxy.$user)
+```
