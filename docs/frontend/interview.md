@@ -83,8 +83,27 @@ http2 多路复用 头部压缩
 
 1. 深拷贝
    Json.parse(Json.stringty)
-   递归 2.浅拷贝
-   Object.assign(target,source,source...)
+   递归 
+   2.浅拷贝
+   Object.assign(target,source,source...)   只能拷贝一层
+
+```
+  const target = {
+      name:"zz",
+      obj:{
+        sex:"male"
+      }
+    }
+
+ const r = Object.assign({},target)
+
+target.obj.sex = "fmale"
+
+console.log(r);
+```
+
+
+
    扩展运算符（spread）
 
 2. 闭包 3.白屏时间 首屏时间

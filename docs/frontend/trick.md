@@ -30,6 +30,18 @@ addArea(geojson,  { fill = "rgba(136,217,255,0.2)", stroke = "#88D9FF", width = 
 
 
 
+1 确定option是否存在三种写法
+option = {}
+if (option) 
+var _option = option || {};
+
+
+2 defaultOption 写在外场最好
+
+
+
+
+
 ```
 
 ## nodemodules 删除
