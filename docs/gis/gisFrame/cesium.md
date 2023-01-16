@@ -262,7 +262,7 @@ heightReference
 
 
 1
-面状、点状、广告牌 
+面状、点状、广告牌 (面貌似不用设置，但是他的perPositionHeight不能为ture)
 heightReference: HeightReference.CLAMP_TO_GROUND, //贴地
 
 
@@ -310,4 +310,13 @@ viewer.flyTo 和 viewer.camera.flyTo 区别
  imageryProvider: createWorldImagery({
       style: IonWorldImageryStyle.ROAD,
     }),
+    ```
+
+
+## `Color`    
+
+```
+    var defaultFill = Cesium.Color.fromBytes(255, 0, 0, 100);
+    // var defaultFill = new Cesium.Color(160 / 255, 30 / 255, 240 / 255, 1);
+    // var defaultFill = new Cesium.Color(255 / 255, 0 / 255, 0 / 255, 1);
     ```
