@@ -52,3 +52,15 @@ https://github.com/paazmaya/shuji 没有目录
 [rollup](https://www.rollupjs.com/#installing-rollup-locally)
 
 
+
+webpack  webpack-cli webpack-dev-server
+
+
+
+module.exports = { 
+    mode:'development',
+    devServer: {
+		static: "./"
+	}
+    
+    }

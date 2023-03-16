@@ -287,6 +287,7 @@ ie 盒模型在改变 padding border 的时候他会压缩 centent 的大小 整
 script 阻塞 dom 树渲染
 这两个不会
 区别 defer 是 dom 树渲染完执行脚本 async 是下载完就执行
+[JS script脚本中async和defer区别详解](https://www.jb51.net/article/189439.htm)
 
 ## 有封装过那些业务组件
 
@@ -303,3 +304,10 @@ title
 echart 封装 监听 resize 组件离开销毁封装
 
 ## Cesium
+
+
+
+工作经历
+
+成都市城市生命线安全运行监测系统
+燃气专项 供排水专项 桥梁后端image.png

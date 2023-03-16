@@ -207,3 +207,26 @@ import {
       featureProjection: 'EPSG:4326' // 规定要素以哪种坐标显示
     }),
 ```
+
+
+```
+function getLayerById(map, layerId) {
+  const layers = map.getLayers().getArray();
+  for (let i = 0; i < layers.length; i++) {
+    if (layers[i].get('id') === layerId) {
+      return layers[i];
+    }
+  }
+  return null;
+}
+```
+
+
+openlayers加载gif三种方案
+1.gifler
+2 overlay
+3 几张不同帧的图片循环渲染
+
+
+
+[openlayer中加载geojson的几种方式](https://blog.csdn.net/qq_40323256/article/details/107817399)

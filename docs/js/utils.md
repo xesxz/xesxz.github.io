@@ -38,3 +38,36 @@ function isInclude(arr, ele) {
 `new Date().toISOString()`
 
 `new Date(new Date().getTime() + 288e5).toISOString().replace('T', ' ')`
+
+
+
+
+```js
+//置顶数据
+let arr = [
+  { name: '首页', url: '/' },
+  { name: '产品', url: '/products' },
+  { name: '联系我们', url: '/contact' },
+  { name: '关于我们', url: '/about' },
+];
+
+// 将 name 属性为 "首页" 的元素置顶
+arr.sort((a, b) => {
+  if (a.name === '首页' && b.name !== '首页') {
+    return -1;
+  }
+  if (a.name !== '首页' && b.name === '首页') {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(arr);
+// [
+//   { name: '首页', url: '/' },
+//   { name: '产品', url: '/products' },
+//   { name: '联系我们', url: '/contact' },
+//   { name: '关于我们', url: '/about' },
+// ]
+
+```

@@ -177,3 +177,11 @@ option = {
 
 ![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202208161129581.png?token=AFPLVXUTCTHYASVQ3A77ECTC7MHUQ)
 [呼吸](http://k21vin.gitee.io/front-end-data-visualization/#/native/pureCSS/loading)
+
+
+## 样式是通过class添加的，可以通过getComputedStyle获取样式
+```
+var element = document.querySelector('.my-class');
+var computedStyle = window.getComputedStyle(element);
+var backgroundColor = computedStyle.backgroundColor;
+```
