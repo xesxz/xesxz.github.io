@@ -56,6 +56,9 @@ https://github.com/paazmaya/shuji 没有目录
 webpack  webpack-cli webpack-dev-server
 
 
+在webpack5中没有为node环境设置的polyfill 所以无法直接访问process
+在wepack5中默认静态文件是在static: "./public"  所以html文件一般放在public里面
+在webpack4中默认静态文件是在static: "./" 所以html直接放在最外层
 
 module.exports = { 
     mode:'development',
