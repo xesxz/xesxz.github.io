@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zl
+ * @Date: 2022-08-07 00:11:14
+ * @LastEditors: zl
+ * @LastEditTime: 2023-03-21 14:36:42
+-->
 # JAVASCRIPT
 
 ## class
@@ -49,3 +57,6 @@ join 连接数组变字符串(split 字符串变数组)
 concat 连接两个或者更多数组 返回新数组
 
 [cookie,token,session 的一些思考](./cookie,token,session的一些思考.md)
+
+
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202303211438688.png)

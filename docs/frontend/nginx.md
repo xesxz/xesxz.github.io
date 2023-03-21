@@ -26,6 +26,13 @@ sudo nginx -s quit // 完整有序的停止 nginx/优雅关闭（先服务完已
 
 ```
 
+
+
+nginx: [error] open() "/opt/homebrew/var/run/nginx.pid" failed (2: No such f
+`nginx -c /opt/homebrew/etc/nginx/nginx.conf`
+
+
+
 #user  nobody;
 worker_processes  1;
 
