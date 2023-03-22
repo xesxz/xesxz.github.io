@@ -9,7 +9,8 @@ cnpm i -g koa-generator //全部安装koa-generator
 koa2 -e koa2-learn   ==使用ejs模板引擎  //创建koa2项目  koa2 project_name
 DEBUG=koa2-learn:* npm start  //启动项目
 npm run dev  需要修改  //开发环境启动项目
-nuxt.js    vue.js
+cnpm i koa2-cors -S
+
 
 ```
 
@@ -22,6 +23,8 @@ nuxt.js    vue.js
 4. Npm run dev
 
 ```
+
+TODO:连接mysql
 
 person.js
 
@@ -129,13 +132,12 @@ node 文件上传
 
 3）koa-multer
 
+4）koa-bodyparser （只支持json和form类型的请求 将解析后的数据放在ctx.request.body属性中）
+
 关于以上三种中间件的差异可以自行网上查资料，这里我选择比较顺眼的 koa-body，实用简单。
 
-创建 koa2 项目
 
-koa2 server
 
-cnpm i koa2-cors -S
 
 ## express
 
