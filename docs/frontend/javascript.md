@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-08-07 00:11:14
  * @LastEditors: zl
- * @LastEditTime: 2023-03-21 14:36:42
+ * @LastEditTime: 2023-03-21 14:43:36
 -->
 # JAVASCRIPT
 
@@ -60,3 +60,4 @@ concat 连接两个或者更多数组 返回新数组
 
 
 ![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202303211438688.png)
+![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202303211442262.png)

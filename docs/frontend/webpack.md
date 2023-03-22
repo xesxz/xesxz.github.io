@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zl
+ * @Date: 2023-03-22 09:13:43
+ * @LastEditors: zl
+ * @LastEditTime: 2023-03-22 09:29:57
+-->
 # webpack vue cli vite
 
 
@@ -67,3 +75,9 @@ module.exports = {
 	}
     
     }
+
+
+
+webpack 插件
+
+`html-webpack-plugin` 打包后自动在dist生成html文件
