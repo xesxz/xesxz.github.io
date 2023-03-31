@@ -28,3 +28,33 @@ console.log(cns.appContext.config.globalProperties.$user)
  const {proxy} = getCurrentInstance()
  console.log(proxy.$user)
 ```
+
+4 `app.config.globalProperties.mittBus = mitt()`
+
+
+定义数组
+```
+// 这几种办法都可以触发响应性，推荐第一种
+// 方案1：创建一个响应式对象，对象的属性是数组
+const state = reactive({
+    arr: []
+});
+state.arr = [1, 2, 3]
+
+// 方案2: 使用ref函数
+const state = ref([])
+state.value = [1, 2, 3]
+
+// 方案3: 使用数组的push方法
+const arr = reactive([])
+arr.push(...[1, 2, 3])
+
+如果不使用 setup 语法糖
+let starData = reactive({
+  total: 0,
+  stars: Array<Star>(),
+})
+const { total, stars } = toRefs(starData)
+
+
+```

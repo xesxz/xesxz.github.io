@@ -191,13 +191,14 @@ this.map.getView().fit(extent);
 [epsg](https://epsg.io/)
 
 ```
-import proj4 from 'proj4'
-import {
-  register
-} from 'ol/proj/proj4'
 
-  proj4.defs("EPSG:4544","+proj=tmerc +lat_0=0 +lon_0=105 +k=1 +x_0=500000 +y_0=0 +ellps=GRS80 +units=m +no_defs +type=crs");
-   register(proj4)
+import { register } from 'ol/proj/proj4'
+import proj4 from "proj4"
+proj4.defs(
+  'EPSG:4548',
+  '+proj=tmerc +lat_0=0 +lon_0=117 +k=1 +x_0=500000 +y_0=0 +ellps=GRS80 +units=m +no_defs'
+)
+register(proj4)
 ```
 
 ```
@@ -219,6 +220,12 @@ function getLayerById(map, layerId) {
   }
   return null;
 }
+
+  getLayerByName(name) {
+  return  this.map.getLayers().getArray().find(item => {
+      return item.get("name") == name 
+    })
+  },
 ```
 
 
@@ -230,3 +237,19 @@ openlayers加载gif三种方案
 
 
 [openlayer中加载geojson的几种方式](https://blog.csdn.net/qq_40323256/article/details/107817399)
+
+```
+new VectorSource({
+        url: data,
+        format: new GeoJSON(),
+      });
+
+
+
+new VectorSource({
+        features: new GeoJSON().readFeatures(data),
+      });
+
+
+
+      ```

@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-06-08 17:20:46
  * @LastEditors: zl
- * @LastEditTime: 2022-11-17 09:48:08
+ * @LastEditTime: 2023-03-30 15:04:41
 -->
 
 ### 插件列表
@@ -86,3 +86,8 @@ const geom = Wkx.Geometry.parse(wkbBuffer);
 > 当下流行的 React UI 框架
 
 [materialui](https://mui.com/zh/)
+
+> vue3省市区级联组件
+
+[elui-china-area-dht](https://www.npmjs.com/package/elui-china-area-dht?activeTab=readme)
+
