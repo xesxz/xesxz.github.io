@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      --r: 360deg;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template:
+        'A A B '
+        'C D B'
+        'C E E ';
+      gap: 5px;
+      animation: rotation 5s infinite linear
+    }
+
+    .item {
+      overflow: hidden;
+      border: 2px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    img {
+      --r: -360deg; scale: 1.8;
+      animation: rotation 5s infinite linear;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+    .item:nth-child(1) {
+      grid-area: A;
+    }
+
+    .item:nth-child(2) {
+      grid-area: B;
+    }
+
+    .item:nth-child(3) {
+      grid-area: E;
+    }
+
+    .item:nth-child(4) {
+      grid-area: C;
+    }
+
+    .item:nth-child(5) {
+      grid-area: D;
+    }
+
+
+
+
+    @keyframes rotation {
+      to {
+        transform: rotate(var(--r));
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item"><img src="https://alifei03.cfp.cn/creative/vcg/800/new/VCG211431442930.jpg" alt=""></div>
+    <div class="item"><img src="https://tenfei03.cfp.cn/creative/vcg/800/new/VCG211378207207.jpg" alt=""></div>
+    <div class="item"><img src="https://tenfei04.cfp.cn/creative/vcg/800/new/VCG211327369865.jpg" alt=""></div>
+    <div class="item"><img src="https://tenfei02.cfp.cn/creative/vcg/800/new/VCG211378059624.jpg" alt=""></div>
+    <div class="item"><img src="https://alifei01.cfp.cn/creative/vcg/800/new/VCG211326787334.jpg" alt=""></div>
+  </div>
+
+
+</body>
+
+</html>

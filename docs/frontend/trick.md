@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zl
+ * @Date: 2022-10-24 09:18:34
+ * @LastEditors: zl
+ * @LastEditTime: 2023-04-18 17:03:17
+-->
 ```javascript
     addArea(geojson, option) {
     const _option = {
@@ -67,3 +75,8 @@ javascript:(function() { /* 在这里输入您的代码 */ })();
 某些浏览器插件可以让您轻松地在当前页面中插入JavaScript代码。例如，Chrome浏览器中的“Custom JavaScript for Websites”插件允许您在当前页面中添加自定义JavaScript代码。安装插件后，在浏览器中打开当前页面并单击插件图标。在弹出的窗口中，您可以输入您要插入的JavaScript代码。单击“保存”以执行该代码。
 
 无论您选择哪种方法，都应该小心插入的JavaScript代码，以确保它不会破坏当前页面或危害您的计算机。
+
+
+```
+npx kill-port 3000
+```

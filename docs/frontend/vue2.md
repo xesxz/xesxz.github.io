@@ -14,3 +14,6 @@ const el = instance.$mount().$el
  createApp(HelloWorld).mount('#app').$el
 
 ```
+
+重置
+    this.formValue = this.$options.data().formValue
