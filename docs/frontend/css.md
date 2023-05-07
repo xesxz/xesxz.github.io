@@ -1,6 +1,9 @@
 ## 居中
 
 ```css
+/* 方案一flex */
+
+/* 方案二定位+translate 此方案不需要知道元素的宽高*/
 .box {
   width: 100px;
   height: 100px;
@@ -11,6 +14,29 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+/* 方案三定位加上 margin-left margin-top 负的宽高 */
+.box{
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       margin-left: -200px;
+       margin-top: -200px;
+       width: 400px;
+       height: 400px;
+       border: 1px solid;
+}
+/* 方案四定位加上 四个方向0 margin auto */
+
+.box{
+      position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin: auto;
+}
+
+
 ```
 
 ## 过渡

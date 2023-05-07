@@ -21,3 +21,13 @@
 
 ## 常用的vueuse hook
 `useLocalStorage`
+
+封装过那些组件
+常见的表格表格弹框 下拉菜单 文件上传 点击地图上传地址  文件下载 预览 播放器
+左右两侧面板,点击翻转
+
+
+
+事件委托
+addEventListener默认是事件冒泡 第三个参数是false
+
