@@ -100,7 +100,7 @@ viewer.camera.computeViewRectangle(); //获取当前视角的 Rectangle
 
 viewer.camera.positionCartographic.height; //获取相机高度
 
-viewer.camera.position; //获取当前视角
+copy(viewer.camera.position); //获取当前视角
 ```
 
 ## 事件
@@ -320,3 +320,6 @@ viewer.flyTo 和 viewer.camera.flyTo 区别
     // var defaultFill = new Cesium.Color(160 / 255, 30 / 255, 240 / 255, 1);
     // var defaultFill = new Cesium.Color(255 / 255, 0 / 255, 0 / 255, 1);
     ```
+
+      //默认的Cesium会加载一个bingMap底图，这个地图网络不太好，一般要先去掉这个默认的
+  viewer.imageryLayers.remove(viewer.imageryLayers.get(0));
