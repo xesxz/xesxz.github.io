@@ -190,6 +190,45 @@ TODO 需要学习常见 loader 和 plugin
 工厂模式
 发布订阅者模式
 策略模式
+```
+https://blog.csdn.net/u013558749/article/details/122495670
+// 定义策略对象
+const addStrategy = {
+  execute: (a, b) => a + b
+};
+
+const subtractStrategy = {
+  execute: (a, b) => a - b
+};
+
+const multiplyStrategy = {
+  execute: (a, b) => a * b
+};
+
+const divideStrategy = {
+  execute: (a, b) => a / b
+};
+
+// 客户端代码
+class Calculator {
+  constructor(strategy) {
+    this.strategy = strategy;
+  }
+
+  execute(a, b) {
+    return this.strategy.execute(a, b);
+  }
+}
+
+const calculator = new Calculator(addStrategy);
+console.log(calculator.execute(1, 2)); // 3
+
+calculator.strategy = multiplyStrategy;
+console.log(calculator.execute(2, 3)); // 6
+
+calculator.strategy = divideStrategy;
+console.log(calculator.execute(6, 2)); // 3
+```
 
 ## 常用手写
 
@@ -269,8 +308,8 @@ or
 
 ### 防抖节流
 
-防抖：函数调用 n 秒后才会执行，若在 n 秒内又调用则取消调用重新计算执行时间
-节流：用户点击只会执行一次 例如一秒内不能连续调用两次
+防抖：函数调用 n 秒后才会执行，若在 n 秒内又调用则取消调用重新计算执行时间(被打断后重新计算) 搜索
+节流：用户点击只会执行一次 例如一秒内不能连续调用两次 resize scorll事件 
 
 ### 盒模型
 
@@ -304,6 +343,10 @@ title
 echart 封装 监听 resize 组件离开销毁封装
 
 ## Cesium
+做了那些功能
+各种样式的线
+旋转立锥 
+白膜贴图
 
 
 
@@ -311,3 +354,13 @@ echart 封装 监听 resize 组件离开销毁封装
 
 成都市城市生命线安全运行监测系统
 燃气专项 供排水专项 桥梁后端image.png
+
+
+
+### vue2和vue3响应式原理的区别
+1 Object.defineProperty 和 proxy
+2 添加get和set，触发set方法的时候更新视图
+3 vue2递归遍历data里面的属性，vue3是原生的proxy不用遍历(直接对data对象代理了)
+4 数组和对象，vue2是重写的数组的方法 vue3可以对响应式不存在的数据更新响应式
+
+
