@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2023-03-09 16:02:50
  * @LastEditors: zl
- * @LastEditTime: 2023-03-21 10:22:12
+ * @LastEditTime: 2023-06-09 17:14:24
 -->
 ## this的指向
 1在全局作用域中，this指向全局对象（浏览器中为window对象）。
@@ -31,3 +31,8 @@
 事件委托
 addEventListener默认是事件冒泡 第三个参数是false
 
+
+css 选择器及优先级
+元素 id 类 伪类
+id选择器 优先级最高 类 元素
+style内联会覆盖选择器的样式 然后important优先级最高

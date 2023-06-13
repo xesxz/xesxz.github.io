@@ -101,6 +101,23 @@ viewer.camera.computeViewRectangle(); //获取当前视角的 Rectangle
 viewer.camera.positionCartographic.height; //获取相机高度
 
 copy(viewer.camera.position); //获取当前视角
+
+function getRadiansOfCamera(
+
+) {
+  const position = viewer.camera.position.clone()
+  const heading = viewer.camera.heading
+  const pitch = viewer.camera.pitch
+  const roll = viewer.camera.roll
+  return {
+    destination: position, //三维笛卡尔坐标
+    orientation: {
+      heading,
+      pitch,
+      roll
+    }
+  }
+}
 ```
 
 ## 事件
@@ -300,9 +317,7 @@ clampToGround: true
 
 
 
-viewer.flyTo 和 viewer.camera.flyTo 区别
 
-前者是飞向一个实体 后者是飞向一个具体的坐标
 
 
 ## 底图
@@ -323,3 +338,13 @@ viewer.flyTo 和 viewer.camera.flyTo 区别
 
       //默认的Cesium会加载一个bingMap底图，这个地图网络不太好，一般要先去掉这个默认的
   viewer.imageryLayers.remove(viewer.imageryLayers.get(0));
+
+
+
+
+在cesium中viewer.camera和viewer.scene.camera的区别
+
+
+viewer.flyTo 和 viewer.camera.flyTo 区别
+
+前者是飞向一个实体 后者是飞向一个具体的坐标

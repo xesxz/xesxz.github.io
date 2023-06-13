@@ -4,7 +4,7 @@
  * @Author: zl
  * @Date: 2022-08-07 00:11:14
  * @LastEditors: zl
- * @LastEditTime: 2023-03-21 14:43:36
+ * @LastEditTime: 2023-05-29 11:54:25
 -->
 # JAVASCRIPT
 
@@ -61,3 +61,9 @@ concat 连接两个或者更多数组 返回新数组
 
 ![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202303211438688.png)
 ![](https://raw.githubusercontent.com/xesxz/image/main/screenshot202303211442262.png)
+
+
+
+
+??（空值合并操作符）
+当左侧值为 null 或 undefined 时，返回 ?? 符号右边的值
