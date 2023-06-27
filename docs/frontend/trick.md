@@ -36,6 +36,9 @@ addArea(geojson,  { fill = "rgba(136,217,255,0.2)", stroke = "#88D9FF", width = 
 
 }
 
+处理报错
+  createTempVectorLayer(layerName, geojson, options = {}) {
+    const { location = true, zIndex = 12, hover = true } = options;}
 
 
 1 确定option是否存在三种写法
