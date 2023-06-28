@@ -1,0 +1,1 @@
+vite import 不能引用public里面的文件

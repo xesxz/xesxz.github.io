@@ -266,3 +266,31 @@ iClient-JavaScript-master
 
 https://github.com/NieuwlandGeo/SLDReade
 dzsp
+
+// 闪烁方法
+let interval
+function flash(feature, speed) {
+  const defaultStyle = olStyle.getPointStyle(feature);
+  const hoverStyle = olStyle.getPointStyle(feature, true);
+
+  //停止闪烁的标志
+  let flag = 0;
+  interval && clearInterval(interval);
+  //闪烁方法对象
+  interval = setInterval(function () {
+    //闪烁次数
+    if (flag <= 1 * 20) {
+      if (flag % 2 == 0) {
+        feature.setStyle(defaultStyle);
+      } else {
+        feature.setStyle(hoverStyle);
+      }
+      flag++;
+    } else {
+      //停止闪烁,还原样式,删除间隔对象
+      feature.setStyle(defaultStyle);
+      window.clearInterval(interval);
+    }
+    //间隔时间
+  }, speed * 100);
+}
