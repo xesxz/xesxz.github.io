@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cesium Mouse Coordinates</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.84/Build/Cesium/Cesium.js"></script>
+  <style>
+    #map {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    #coordinates {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="coordinates">Latitude: <span id="lat"></span>, Longitude: <span id="lon"></span></div>
+
+  <script>
+    // 初始化Cesium地图
+    const viewer = new Cesium.Viewer('map');
+
+    // 获取鼠标移动的屏幕坐标并转换为地理坐标
+    const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+    handler.setInputAction(function (movement) {
+      const cartesian = viewer.camera.pickEllipsoid(movement.endPosition, viewer.scene.globe.ellipsoid);
+      if (cartesian) {
+        const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+        const latitude = Cesium.Math.toDegrees(cartographic.latitude).toFixed(6);
+        const longitude = Cesium.Math.toDegrees(cartographic.longitude).toFixed(6);
+
+        document.getElementById('lat').textContent = latitude;
+        document.getElementById('lon').textContent = longitude;
+      }
+    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+  </script>
+</body>
+</html>

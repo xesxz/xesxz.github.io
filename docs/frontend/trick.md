@@ -83,3 +83,11 @@ javascript:(function() { /* 在这里输入您的代码 */ })();
 ```
 npx kill-port 3000
 ```
+
+
+
+Mac 查看本机公网IP 命令
+
+`curl ifconfig.me`
+`curl -L ip.tool.lu`
+`curl ipinfo.io/json`
