@@ -50,3 +50,19 @@ sudo sh ./shutdown.sh
 http://localhost:7777/dist/
 ./catalina.sh run
 ```
+
+
+vi
+
+
+:wq 
+保存bk
+并退出
+
+:q
+不保存退出
+
+
+
+:q!
+不保存退出
