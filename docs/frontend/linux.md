@@ -66,3 +66,7 @@ vi
 
 :q!
 不保存退出
+
+
+
+docker run -p 8888:80 adolfintel/speedtest
