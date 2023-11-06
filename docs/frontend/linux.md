@@ -70,3 +70,19 @@ vi
 
 
 docker run -p 8888:80 adolfintel/speedtest
+
+
+`systemctl status firewalld `
+`systemctl start firewalld`
+`systemctl status firewalld` 
+`systemctl stop firewalld`
+
+
+```
+firewall-cmd --zone=public --add-port=514/udp --permanent
+firewall-cmd --zone=public --add-port=514/tcp --permanent
+
+firewall-cmd --reload
+
+firewall-cmd --list-all
+```
