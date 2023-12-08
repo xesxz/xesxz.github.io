@@ -79,6 +79,7 @@ docker run -p 8888:80 adolfintel/speedtest
 
 
 ```
+<!-- centos -->
 firewall-cmd --zone=public --add-port=514/udp --permanent
 firewall-cmd --zone=public --add-port=514/tcp --permanent
 
@@ -86,3 +87,16 @@ firewall-cmd --reload
 
 firewall-cmd --list-all
 ```
+
+```
+查看已放行的端口：firewall-cmd --list-ports
+放行服务器端口：firewall-cmd --zone=public --add-port=1688/tcp --permanent
+关闭服务器端口：firewall-cmd --zone=public --remove-port=1688/tcp --permanent
+重启防火墙：firewall-cmd --reload
+```
+
+
+
+[debian 端口开启](https://blog.csdn.net/bangshabgni/article/details/131038760)
+
+linux查看架构 uname -a
