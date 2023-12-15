@@ -167,7 +167,7 @@ Cesium.GeoJsonDataSource.load('./data/beijing.geojson').then(function (
 
 ## 加载模型 12
 
-```javascript
+<!-- 
 var modelentity = viewer.entities.add({
   name: '123',
   description:
@@ -176,9 +176,9 @@ var modelentity = viewer.entities.add({
   model: {
     uri: 'Model/SFTDT.glb', // 资源路径
   }
-})
+}) -->
 
-```
+
 
 ## 链接
 
