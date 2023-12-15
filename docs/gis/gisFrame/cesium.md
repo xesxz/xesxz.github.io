@@ -167,17 +167,18 @@ Cesium.GeoJsonDataSource.load('./data/beijing.geojson').then(function (
 
 ## 加载模型
 
-<!-- 
+
+```javascript
 var modelentity = viewer.entities.add({
   name: '123',
   description:
-    "<div><img src='Build/Cesium/Assets/Images/cesium_credit.png' /><p>这是一辆大车！</div>", // 这是模型的描述属性，可以是html标签
+    "", // 这是模型的描述属性，可以是html标签
   position: Cesium.Cartesian3.fromDegrees(112.07, 35.05),
   model: {
     uri: 'Model/SFTDT.glb', // 资源路径
   }
-}) -->
-
+})
+```
 
 
 ## 链接
