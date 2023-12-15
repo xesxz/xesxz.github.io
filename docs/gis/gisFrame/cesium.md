@@ -225,12 +225,7 @@ cesium 加载需使用天地图墨卡托显示的位置才是正确的 vec_w
 
 #### 坐标转换
 
-/**
- * 笛卡尔坐标系转WGS84坐标系
- * @param point
- * @return {{lat: *, lng: *, alt: *}}
- * @constructor
- */
+
 var Cartesian3_to_WGS84 = function (point) {
   var cartesian33 = new Cesium.Cartesian3(point.x, point.y, point.z);
   var cartographic = Cesium.Cartographic.fromCartesian(cartesian33);
