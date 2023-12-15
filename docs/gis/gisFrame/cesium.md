@@ -175,8 +175,9 @@ var modelentity = viewer.entities.add({
   position: Cesium.Cartesian3.fromDegrees(112.07, 35.05),
   model: {
     uri: 'Model/SFTDT.glb', // 资源路径
-  },
-});
+  }
+})
+
 ```
 
 ## 链接
