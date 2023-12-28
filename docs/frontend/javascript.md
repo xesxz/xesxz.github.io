@@ -67,3 +67,10 @@ concat 连接两个或者更多数组 返回新数组
 
 ??（空值合并操作符）
 当左侧值为 null 或 undefined 时，返回 ?? 符号右边的值
+
+
+
+移除空格
+let color = '#FFF5EE'
+
+color = color.replace(/\s/g, "");

@@ -7,6 +7,26 @@
  * @LastEditTime: 2023-04-18 17:03:17
 -->
 ```javascript
+
+
+function addArea(geojson, options = {}) {
+    let {showLabel = true, layerName = ""} = options;
+}
+
+
+    addArea(geojson, options) {
+    var options = options || {};
+
+    var showLabel = options.showLabel || true
+    var layerName = options.layerName  || ""
+}
+
+
+
+
+
+
+
     addArea(geojson, option) {
     const _option = {
       showLabel: true,

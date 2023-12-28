@@ -19,6 +19,7 @@ sudo nginx -s reopen // 重新打开日志文件
 sudo nginx -s stop // 快速停止 nginx
 
 sudo nginx -s quit // 完整有序的停止 nginx/优雅关闭（先服务完已打开的连接）
+nginx -t  查看配置文件
 
 ## nginx
 

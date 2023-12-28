@@ -281,6 +281,9 @@ heightReference
 面状、点状、广告牌 (面貌似不用设置，但是他的 perPositionHeight 不能为 ture)
 heightReference: HeightReference.CLAMP_TO_GROUND, //贴地
 
+线要这样设置
+     clampToGround: true,//开启贴地
+
 2 geojson
 let promise = Cesium.GeoJsonDataSource.load(\_geojsondata, {
 
@@ -463,3 +466,14 @@ map.viewer.scene.globe.depthTestAgainstTerrain 默认是false，也就是不使�
 
 
 supermap 默认设置的是true
+
+根据视距缩放图标
+ scaleByDistance: new Cesium.NearFarScalar(10000, 1.0, 500000, 0.1)
+
+
+## 移除
+```
+viewer.dataSources.removeAll()
+viewer.scene.primitives.removeAll()
+viewer.imageryLayers.removeAll()
+```

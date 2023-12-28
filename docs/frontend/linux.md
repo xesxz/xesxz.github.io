@@ -100,3 +100,15 @@ firewall-cmd --list-all
 [debian 端口开启](https://blog.csdn.net/bangshabgni/article/details/131038760)
 
 linux查看架构 uname -a
+
+
+ip addr show eth0
+
+
+[Debian12](https://blog.csdn.net/lym003/article/details/1337696)
+
+```
+sudo apt update
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.25-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.25-1_all.deb
+```
