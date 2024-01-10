@@ -12,6 +12,19 @@
 function addArea(geojson, options = {}) {
     let {showLabel = true, layerName = ""} = options;
 }
+function addArea(geojson, options = {}) {
+  const defaultOptions = {
+    showLabel: 1,
+    layerName: '',
+  }
+  options = Object.assign({}, defaultOptions, options)
+  return options
+}
+
+
+
+在mapbox中使用的
+        options = extend({}, {localIdeographFontFamily: this._localIdeographFontFamily, localFontFamily: this._localFontFamily}, options);
 
 
     addArea(geojson, options) {

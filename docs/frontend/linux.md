@@ -112,3 +112,50 @@ sudo apt update
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.25-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.25-1_all.deb
 ```
+
+
+sudo apt-get update
+sudo apt-get install mlocate
+
+sudo updatedb
+
+
+locate -b '\example_folder'
+
+
+
+curl
+wget
+
+vi
+1、使用“:wq”或“:x”或“ZZ”命令即可保存退出；2、使用“:q”命令即可正常退出；使用“:q!”即可不保存退出；4、使用“:!”即可强制退出
+
+
+vim 
+
+:w            - 保存文件，不退出 vim
+
+:w file  -将修改另外保存到 file 中，不退出 vim
+
+:w!          -强制保存，不退出 vim
+
+:wq          -保存文件，退出 vim
+
+:wq!        -强制保存文件，退出 vim
+
+:q            -不保存文件，退出 vim
+
+:q!          -不保存文件，强制退出 vim
+
+:e!          -放弃所有修改，从上次保存文件开始再编辑
+
+
+
+
+ apt install
+
+
+'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '5461150';
+use mysql;
+
+update user set host = '%' where user = 'root';
