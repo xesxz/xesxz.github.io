@@ -69,6 +69,7 @@ state.list = res.result
 ## vuecli
 
 tailwind  使用vuecli 创建项目后可以使用 `vue add tailwind`添加tailwind
+[在VUE中使用Tailwind CSS](https://juejin.cn/post/7083294405280399390)
 
 
 

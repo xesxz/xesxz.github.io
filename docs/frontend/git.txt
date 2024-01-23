@@ -14,7 +14,7 @@ git commit -m 'update .gitignore'
 放弃所有的文件修改可以使用 git checkout .  命令。
 
 线上的代码重置到指定时间
-git reset --hard 35f9ecc0b44f1e76cd43a054023a63b1f2c4fa6d 
+git reset --hard 35f9ecc0b44f1e76cd43a054023a63b1f2c4fa6d
 git push -f
 ```
 
@@ -185,8 +185,8 @@ git pull   // 这一步为了同步远程代码，不需要的话可不执行
 +   git fetch 指令是下载远程仓库最新内容，不做合并。
 +   git reset 指令把HEAD指向master最新版本。
 
-> reset --hard：重置后不保留暂存区和工作区  
-> reset --soft：保留工作区，并把重置 HEAD 所带来的新的差异放进暂存区（此时代码的变更状态相当于执行完 `git add`命令）  
+> reset --hard：重置后不保留暂存区和工作区
+> reset --soft：保留工作区，并把重置 HEAD 所带来的新的差异放进暂存区（此时代码的变更状态相当于执行完 `git add`命令）
 > reset --mixed：reset的默认参数，保留工作目录，并重置暂存区（此时代码的变更状态相当于执行 `git add`命令之前）
 
 #### 3、stash 暂存（推荐）
@@ -230,3 +230,12 @@ git checkout -b <branch-name>
 
 git reflog：查看每一次命令记录
 git reset --hard ca936c3即回滚到了最新的版本号了
+
+创建仓库
+curl -u "$username:$token" https://api.github.com/user/repos -d '{"name":"kkkk"}'
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xesxz/lll.git
+git push -u origin main

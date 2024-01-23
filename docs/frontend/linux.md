@@ -159,3 +159,20 @@ vim
 use mysql;
 
 update user set host = '%' where user = 'root';
+
+
+cp -r /etc/ssh/dist{,.bak}
+cp /path/to/your/index.html{,.bak}
+cp /etc/ssh/sshd_config{,.bak}
+
+
+debian10 自带wget
+
+
+sudo lsof -i -P -n
+查看所有端口
+
+lsof -i:端口号
+
+
+netstat -ntlp

@@ -1,0 +1,15 @@
+tunnel:  366d4724-b301-4f8a-8c03-3f42af8b1b20
+credentials-file: /root/.cloudflared/366d4724-b301-4f8a-8c03-3f42af8b1b20.json
+protocol: http2
+originRequest:
+  connectTimeout: 30s
+  noTLSVerify: false
+
+ingress:
+  - hostname: zl.xesxz.xyz
+    service: http://192.168.31.10:38846
+cloudflared tunnel route dns test zl.xesxz.xyz
+
+
+cloudflared --loglevel debug --transport-loglevel warn --config ~/.cloudflared/config.yml tunnel run366d4724-b301-4f8a-8c03-3f42af8b1b20
+source ~/.zshrc
