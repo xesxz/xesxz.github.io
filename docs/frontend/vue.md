@@ -72,7 +72,8 @@ tailwind  使用vuecli 创建项目后可以使用 `vue add tailwind`添加tailw
 [在VUE中使用Tailwind CSS](https://juejin.cn/post/7083294405280399390)
 
 
-
+postcss
+npx tailwindcss init -p
 
 
 ## 配置代理

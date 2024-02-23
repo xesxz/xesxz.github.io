@@ -176,3 +176,10 @@ lsof -i:端口号
 
 
 netstat -ntlp
+
+
+https://233boy.com/v2ray/v2ray-server/
+
+
+systemctl stop firewalld; systemctl disable firewalld; ufw disable
+关闭防火墙
