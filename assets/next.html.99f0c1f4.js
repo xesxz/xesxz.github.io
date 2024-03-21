@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as n,a as e}from"./app.b1de4645.js";const a={},o=e("p",null,[e("code",null,"npx create-next-app@latest --typescript")],-1),s=[o];function _(r,l){return c(),n("div",null,s)}var d=t(a,[["render",_],["__file","next.html.vue"]]);export{d as default};

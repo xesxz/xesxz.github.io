@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-75b9843b","path":"/frontend/b.html","title":"eslint + prettier","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1666769262000,"contributors":[{"name":"\u5F20\u78CA","email":"631298983@qq.com","commits":1}]},"filePathRelative":"frontend/b.md"}');export{t as data};

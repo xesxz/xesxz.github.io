@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,a as l}from"./app.b1de4645.js";const s={},a=l("p",null,"systemctl start cloudflared systemctl status cloudflared",-1),o=[a];function r(_,d){return t(),c("div",null,o)}var f=e(s,[["render",r],["__file","cloudflare.html.vue"]]);export{f as default};

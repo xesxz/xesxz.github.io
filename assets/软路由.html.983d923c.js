@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as _,a as e}from"./app.b1de4645.js";const o={},n=e("p",null,"dev",-1),a=e("p",null,"https://github.com/vernesong/OpenClash/releases/tag/Clash",-1),c=[n,a];function l(r,h){return s(),_("div",null,c)}var i=t(o,[["render",l],["__file","\u8F6F\u8DEF\u7531.html.vue"]]);export{i as default};

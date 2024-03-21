@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,a as o}from"./app.b1de4645.js";const _={},r=o("p",null,"vite import \u4E0D\u80FD\u5F15\u7528public\u91CC\u9762\u7684\u6587\u4EF6",-1),s=[r];function a(n,i){return t(),c("div",null,s)}var d=e(_,[["render",a],["__file","vite.html.vue"]]);export{d as default};

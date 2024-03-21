@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,a as o}from"./app.b1de4645.js";const c={},s=o("p",null,"ol-vite",-1),a=[s];function n(r,l){return t(),_("div",null,a)}var d=e(c,[["render",n],["__file","\u5E38\u7528.html.vue"]]);export{d as default};

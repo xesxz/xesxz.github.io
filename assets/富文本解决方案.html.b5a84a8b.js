@@ -1,0 +1,1 @@
+import{_,o as t,c as o,a as e}from"./app.b1de4645.js";const n={},c=e("p",null,"Wangeditor:pureadmin\u4F7F\u7528",-1),s=e("p",null,"tinymce:go\u4F7F\u7528",-1),a=[c,s];function r(l,i){return t(),o("div",null,a)}var m=_(n,[["render",r],["__file","\u5BCC\u6587\u672C\u89E3\u51B3\u65B9\u6848.html.vue"]]);export{m as default};

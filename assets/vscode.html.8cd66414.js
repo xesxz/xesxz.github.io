@@ -1,0 +1,1 @@
+import{_ as o,o as t,c,a as e}from"./app.b1de4645.js";const s={},_=e("p",null,"\u8FD4\u56DE\u4E0A\u4E00\u4E2A\u5149\u6807",-1),n=e("p",null,"control -",-1),l=[_,n];function r(a,d){return t(),c("div",null,l)}var f=o(s,[["render",r],["__file","vscode.html.vue"]]);export{f as default};

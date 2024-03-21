@@ -1,0 +1,217 @@
+<!--
+ * @Descripttion:
+ * @version:
+ * @Author: zl
+ * @Date: 2022-06-27 15:22:07
+ * @LastEditors: zl
+ * @LastEditTime: 2022-10-05 21:48:59
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <style>
+
+    .box{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      /* font-family:; */
+    }
+    .img{
+      width: 100%;
+      height: 100%;
+
+    }
+    .time{
+      width: 260px;
+      position: absolute;
+      left: 65px;
+      top: 16.8%;
+      color: #3264d7;
+      font-weight: 600;
+      background: #fff;
+      font-size: 21px;
+      font-family: PingFang SC;
+
+    }
+    .second{
+      margin-left: 38px;
+    }
+    .day{
+      font-size:0px;
+    }
+
+    .a,.b{
+      font-size: 21px;
+    }
+
+    .b{
+      font-size: 28px;
+    }
+
+    .wrap{
+      position: absolute;
+  top: 434px;
+  left: 36px;
+height: 20px;
+  width: 317px;
+      overflow: hidden;
+      background: #fff;
+    }
+.line{
+
+  display: flex;
+  height: 5px;
+  width: 1000px;
+
+  animation-name: move;
+animation-duration: 6s;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+
+}
+
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-260px);
+    }
+}
+
+.line div{
+  margin-right: 4px;
+  transform: skew(-20deg);
+  scale: 1.2;
+}
+
+.line .a{
+  height: 100%;
+  width: 9px;
+background: #8ba3f9;
+/* background: red; */
+}
+.line .b{
+  height: 100%;
+  width: 9px;
+background: #b1c5fa;
+/* background: pink; */
+}
+
+.line .c{
+  height: 100%;
+  width: 9px;
+background: #d9e3fc;
+/* background: yellow; */
+}
+.rq{
+  position: absolute;
+  top: 479px;
+  left: 45px;
+  font-family: PingFang SC;
+  color:#f9fbff;
+  font-size: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="time">
+      <span class="day">
+        <span class="a"></span>
+        <span class="b"></span>
+      </span>
+      <span class="second"></span>
+
+    </div>
+
+    <div class="rq">
+      <span class="sj">09/18</span> 
+      <span>20时</span>
+    </div>
+<div class="wrap">
+  <div class="line">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    
+       </div>
+</div>
+    <!-- <img class="img" src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202209202100039.jpg" alt=""> -->
+
+    <img class="img" src="https://raw.githubusercontent.com/xesxz/image/main/screenshot202210052148742.PNG" alt="">
+    
+  </div>
+  <script>
+    var rq = dayjs().format('YYYY-MM-DD')
+
+
+    var sj = dayjs().subtract(1,"day").format('MM/DD')
+    document.querySelector('.sj').innerHTML = sj
+   setInterval(() => {
+    document.querySelector('.a').innerHTML = dayjs().format('HH:mm:')
+    document.querySelector('.b').innerHTML = dayjs().format('ss')
+   },1000)
+    document.querySelector('.second').innerHTML = rq
+
+
+    document.querySelector('body').onclick = function(){
+      window.location.href = "https://xesxz.github.io/html%2Fggg.html"
+    }
+  </script>
+</body>
+</html>

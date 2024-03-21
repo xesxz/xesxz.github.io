@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as s,a as e}from"./app.b1de4645.js";const _={},n=e("p",null,"ALTER TABLE your_table_name ADD tag VARCHAR(255);",-1),o=e("p",null,"pm2 start --name t3-app npm -- start",-1),c=[n,o];function l(r,m){return a(),s("div",null,c)}var d=t(_,[["render",l],["__file","mysql.html.vue"]]);export{d as default};
