@@ -61,3 +61,6 @@
 
 
 wget -O /dev/null https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-dvd/debian-12.2.0-amd64-DVD-1.iso
+
+pyenv
+https://juejin.cn/post/7056800493753860103
