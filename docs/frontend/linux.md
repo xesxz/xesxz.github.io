@@ -14,6 +14,18 @@ sudo kill -9 1140 找到 pid 关闭它
 
 ```
 
+
+###
+```
+ss -tuln
+
+netstat -tuln
+```
+
+
+
+
+
 返回到上级
 `cd ..`
 
