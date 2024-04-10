@@ -23,3 +23,9 @@ https://docs.github.com/zh/search-github/searching-on-github/searching-code
   cat id_rsa.pub
   复制公钥到github
 ```
+
+
+git config --global http.proxy http://127.0.0.1:7890
+
+
+git config --global -l
