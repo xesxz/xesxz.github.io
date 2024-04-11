@@ -1,10 +1,11 @@
-返回上一个光标
+
+# vscode快捷键
+
+* control + -  返回上一个光标
 
 
-control -
 
-
-# 插件
+# vscode插件
 
 * Live Server
 * GitHub Repositories
