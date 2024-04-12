@@ -1,1 +1,4 @@
-const
+wms
+wmts
+wfs
+
