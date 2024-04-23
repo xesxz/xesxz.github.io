@@ -14,6 +14,7 @@
 * Code Runner 
 * CodeGeeX
 * ES7 React/Redux/GraphQL/React-Native snippets
+*	Tailwind CSS IntelliSense
 
 
 

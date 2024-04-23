@@ -188,6 +188,8 @@ lsof -i:端口号
 
 
 netstat -ntlp
+ss -tuln
+https://www.quanxiaoha.com/linux-command/linux-port-occupancy.html
 
 
 https://233boy.com/v2ray/v2ray-server/
@@ -195,3 +197,29 @@ https://233boy.com/v2ray/v2ray-server/
 
 systemctl stop firewalld; systemctl disable firewalld; ufw disable
 关闭防火墙
+
+
+你还可以使用 curl 或 wget 命令结合外部服务来查看本机的公共 IP 地址。
+curl ifconfig.me
+wget -qO- ifconfig.me
+
+```
+
+装vim  vi不好用
+
+/etc/ssh/sshd_config
+
+
+# Authentication:
+
+#LoginGraceTime 2m
+PermitRootLogin yes
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+
+
+service sshd restart
+
+```

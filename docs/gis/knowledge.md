@@ -56,7 +56,8 @@ wfs 返回 json 或者 xml 这些
 
 ## OGC 规范
 
-[OGC 标准介绍¶](https://www.osgeo.cn/doc_ogcstd/ogc_standard/index.html)
+[OGC 标准介绍¶](https://www.osgeo
+.cn/doc_ogcstd/ogc_standard/index.html)
 
 ## ol 加载 mvt 地图
 
