@@ -39,3 +39,6 @@ launchctl unload /Library/LaunchDaemons/com.example.autorun.plist
 ```
 
 
+
+
+[macOS下使用crontab定时任务](https://blog.csdn.net/seanxwq/article/details/125484860)
