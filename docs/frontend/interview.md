@@ -368,3 +368,62 @@ echart 封装 监听 resize 组件离开销毁封装
 4 数组和对象，vue2是重写的数组的方法 vue3可以对响应式不存在的数据更新响应式
 
 
+
+
+
+数组去重
+
+```js
+
+
+// set
+function unique(arr) {
+  return Array.from(new Set(arr));
+}
+
+
+
+
+// reduce
+  list.reduce((pre,item) => {
+    if (!pre.includes(item)) {
+      pre.push(item);
+    }
+    return pre
+  },[])
+
+ 
+//for循环
+function uniq(arr) {
+  let res = []
+  for (let i = 0; i < arr.length; i++) {
+    if (res.indexOf(arr[i]) === -1) {
+      res.push(arr[i])
+    }
+  }
+  return res
+}
+
+
+  ```
+
+
+
+<!-- 数组里面对象去重 -->
+```js
+
+const array = [
+  { id: 1, name: 'John' },
+  { id: 2, name: 'Jane' },
+  { id: 1, name: 'John' },
+  { id: 3, name: 'Alice' }
+];
+
+const uniqueArray = Array.from(new Set(array.map(JSON.stringify)), JSON.parse);
+console.log(uniqueArray);
+
+
+
+```
+
+
