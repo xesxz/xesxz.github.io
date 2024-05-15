@@ -477,3 +477,4 @@ viewer.dataSources.removeAll()
 viewer.scene.primitives.removeAll()
 viewer.imageryLayers.removeAll()
 ```
+

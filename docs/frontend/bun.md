@@ -23,3 +23,22 @@ const server = Bun.serve({
 });
 
 ```
+
+
+```js
+import { Hono } from "hono";
+import { cors } from "hono/cors";
+const app = new Hono()
+
+app.use("*", cors());
+
+
+app.get('/hello', (c) => c.json({
+    hello:"world"
+}))
+const server = Bun.serve({
+ fetch:app.fetch,
+  port:4000
+});
+
+```
