@@ -30,5 +30,23 @@ wfs
 
 ## 代理模式
 
+# 在cesium中entity和primitive的区别
 
 
+
+
+bfc  清除浮动的方式
+
+1 子元素最后一个clear  both
+2 父元素设置高度
+
+
+
+
+你好 我叫张磊  18开始从事前端开发工作 主要做gis大屏这一块 用到的技术三维是cesium 二维openlayers mapbox 此外还能够使用qgis geoserve这些工具，能够独立完成gis开发
+
+
+
+
+
+点线面  分析功能  缓冲 扩散分析 开挖 淹没分析  军标   bim模型 模型查看 渲染模型树     单体模型   轨迹  视域分析  雨雪雾

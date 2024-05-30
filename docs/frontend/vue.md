@@ -92,3 +92,6 @@ npx tailwindcss init -p
     }
 
     ```
+
+
+vue2能够监测到数组push 因为重写了数组的方法  不能监测到数组长度改变 直接修改数组下标（vue3可以）  

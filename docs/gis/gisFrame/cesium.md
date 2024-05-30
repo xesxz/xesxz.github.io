@@ -478,3 +478,7 @@ viewer.scene.primitives.removeAll()
 viewer.imageryLayers.removeAll()
 ```
 
+
+
+
+军标 https://jsrun.net/note/6URpp
