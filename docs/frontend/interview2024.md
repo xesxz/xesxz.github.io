@@ -54,3 +54,10 @@ bfc  清除浮动的方式
 
 
 shader  水面  圈扩散
+
+
+
+## gis
+怎么获取imageryLayers上面的features
+
+viewer
