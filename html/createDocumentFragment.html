@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+
+  </ul>
+
+  <script>
+    // ul里面添加li
+
+
+    const fruits = ['Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange',
+      'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon'
+    ];
+    const ul = document.querySelector('ul')
+    fruits.forEach(item => {
+      const dom = document.createElement('li')
+      dom.innerHTML = item
+      ul.appendChild(dom)
+    })
+
+
+    // 使用文档碎片减少操作dom的次数
+    const ul = document.querySelector('ul')
+    const fruits = ['Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange',
+      'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon', 'Apple', 'Orange', 'Banana', 'Melon'
+    ];
+    const docfragemen = document.createDocumentFragment()
+    fruits.forEach(item => {
+      const dom = document.createElement('li')
+      dom.innerHTML = item
+      docfragemen.append(dom)
+    })
+
+    ul.append(docfragemen)
+  </script>
+</body>
+
+</html>

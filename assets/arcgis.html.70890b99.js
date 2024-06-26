@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as s,b as c}from"./app.91f1f508.js";const a={},t=c("p",null,"var esri = new Cesium.ArcGisMapServerImageryProvider({ url : 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer' });",-1),o=[t];function i(_,n){return r(),s("div",null,o)}var m=e(a,[["render",i],["__file","arcgis.html.vue"]]);export{m as default};
