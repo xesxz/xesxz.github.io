@@ -116,6 +116,42 @@ function getRadiansOfCamera() {
     },
   };
 }
+
+
+
+
+
+  function getDegreesOfCamera() {
+      var lngLat = cartesian3ToDegrees(viewer.camera.positionWC);
+      var heading = Cesium.Math.toDegrees(viewer.camera.heading);
+      var pitch = Cesium.Math.toDegrees(viewer.camera.pitch);
+      var roll = Cesium.Math.toDegrees(viewer.camera.roll);
+      return {
+          destination: [lngLat[0], lngLat[1], lngLat[2]],
+          orientation: [heading, pitch, roll]
+      };
+  }
+
+
+
+
+/**
+ * 三维笛卡尔坐标转角度
+ */
+ function cartesian3ToDegrees(
+  cartesian3
+) {
+  const lngLat = (viewer
+    ? viewer.scene.globe.ellipsoid
+    : Cesium.Ellipsoid.WGS84
+  ).cartesianToCartographic(cartesian3)
+  const lng = Cesium.Math.toDegrees(lngLat.longitude)
+  const lat = Cesium.Math.toDegrees(lngLat.latitude)
+  const hei = lngLat.height
+  return [lng, lat, hei]
+}
+
+
 ```
 
 ## 事件

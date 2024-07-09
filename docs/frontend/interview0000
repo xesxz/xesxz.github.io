@@ -9,8 +9,18 @@ cesium具体做了那些功能    原生的  还是封装的
 
 cesium  弹框怎么实现
 
+在vue项目中 Viewer对象放哪里
+
+viewer.flyTo  和 Camera.flyTo  区别
+
+bim模型高亮
+
 
 了解geoserve吗  发过服务吗   wms  wmts  还有？？？xyz
+
+openlayers热力图
+openlayers聚合
+openlayers轨迹线 样式
 
 
 
@@ -19,4 +29,6 @@ cesium  弹框怎么实现
 
 
 
-倾斜摄影  手动设置位置
+倾斜摄影  浮在空中  手动设置位置
+
+
