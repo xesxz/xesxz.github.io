@@ -518,3 +518,28 @@ viewer.imageryLayers.removeAll()
 
 
 军标 https://jsrun.net/note/6URpp
+
+
+
+
+```
+        const viewer = new Cesium.Viewer("cesiumContainer", {
+            baseLayer:false,
+            baseLayerPicker: false,
+            sceneModePicker: false,
+            navigationHelpButton: false,
+            homeButton: false,
+            infoBox: false,
+            timeline: false,
+            animation: false,
+            vrButton: false,
+            geocoder: false,
+            fullscreenButton: false,
+            navigationInstructionsInitiallyVisible: false,
+            shouldAnimate: true,
+            creditContainer: document.createElement("div")
+        });
+        viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK)
+        viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK)
+
+        ```
