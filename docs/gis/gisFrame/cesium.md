@@ -543,3 +543,35 @@ viewer.imageryLayers.removeAll()
         viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK)
 
         ```
+
+        ```
+           // 计算矩阵
+    const computeModelMatrix = (position = [0, 0, 0], rotation = [0, 0, 0], scale = [1, 1, 1]) => {
+        // 计算旋转角度
+        let rotationX = Cesium.Matrix4.fromRotationTranslation(
+            Cesium.Matrix3.fromRotationX(Cesium.Math.toRadians(rotation[0])));
+
+        let rotationY = Cesium.Matrix4.fromRotationTranslation(
+            Cesium.Matrix3.fromRotationY(Cesium.Math.toRadians(rotation[1])));
+
+        let rotationZ = Cesium.Matrix4.fromRotationTranslation(
+            Cesium.Matrix3.fromRotationZ(Cesium.Math.toRadians(rotation[2])));
+        // 根据位置计算矩阵
+        let enuMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
+            Cesium.Cartesian3.fromDegrees(...position)
+        );
+        // 旋转矩阵
+        Cesium.Matrix4.multiply(enuMatrix, rotationX, enuMatrix);
+        Cesium.Matrix4.multiply(enuMatrix, rotationY, enuMatrix);
+        Cesium.Matrix4.multiply(enuMatrix, rotationZ, enuMatrix);
+        // 缩放矩阵
+        let scaleMatrix = Cesium.Matrix4.fromScale(new Cesium.Cartesian3(...scale));
+        // 计算最终矩阵
+        let modelMatrix = Cesium.Matrix4.multiply(enuMatrix, scaleMatrix, new Cesium.Matrix4());
+
+        return modelMatrix;
+    }
+
+
+      tileset.root.transform = computeModelMatrix([113.31914084147262, 23.10896926740387, 0], [0, 0, 0], [2, 2, 2])
+    ```
