@@ -33,6 +33,13 @@ wfs
 # 在cesium中entity和primitive的区别
 
 
+| entity      | primitive |
+| ----------- | ----------- |
+| 写简单      | 写复杂       |
+| 动态效果利用property   | 编写着色器        |
+|     |  数量大用       |
+
+
 
 
 bfc  清除浮动的方式
