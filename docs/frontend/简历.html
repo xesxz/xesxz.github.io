@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张伟柱的简历</title>
+<!--pdf下载 -->
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<!--jquery 方便后续使用jquery原生函数，可不引入-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            font-size: 12pt;
+        }
+        .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            padding:  0mm 10mm  10mm 10mm;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 5mm;
+        }
+        h1 {
+            margin-bottom: 5mm;
+            font-size: 18pt;
+        }
+        h2 {
+            font-size: 14pt;
+            border-bottom: 1pt solid #ccc;
+            padding-bottom: 2mm;
+            /* margin-top: 10mm;
+            margin-bottom: 5mm; */
+        }
+        .section {
+            /* margin-bottom: 5mm; */
+        }
+        .job, .education, .project {
+            margin-bottom: 5mm;
+        }
+        .job-title, .degree, .project-title {
+            font-weight: bold;
+        }
+        .company, .school {
+font-size: 12pt;
+font-weight: bold;
+        }
+        .date {
+            /* color: #ccc; */
+            float: right;
+            font-weight: normal;
+            font-size: 12pt
+
+        }
+        ul {
+            padding-left: 5mm;
+            margin: 2mm 0;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <header>
+            <h1>张伟柱</h1>
+            <div>男 | 17602390731 | 2年工作经验</div>
+            <div>求职意向：WebGIS前端工程师 | 期望薪资：12-15K</div>
+        </header>
+
+        <div class="section">
+            <h2>个人优势</h2>
+            <p>熟练使用常见gis开发框架,熟练使用vue全家桶,熟练使用javascript，css，html等前端技术,熟练使用node.js技术，熟练使用echart、hightchart图表库,一直从事WebGIS开发，熟悉GIS理论,完成多个数字城市项目GIS大屏开发，优化三维场景。负责公司WebGIS相关项目技术确定并进行开发</p>
+        </div>
+
+        <div class="section">
+            <h2>专业技能</h2>
+            <ul>
+                <li>GIS开发框架,Cesium、Openlayers、MapBox</li>
+                <li>Geoserver：能够进行服务发布、连接空间数据库、配图、图层过滤等</li>
+                <li>QGIS、超图、CesiumLab等GIS软件：能够进行GIS数据处理，格式转换，配图、处理倾斜摄影、处理白膜数据等操作。</li>
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>工作经历</h2>
+            <div class="job">
+
+                <div class="company">重庆观度科技股份有限公司  <span class="date">2024.04 - 2024.07</span></div>
+
+            </div>
+            <div class="job">
+
+                <div class="company">成都四方伟业软件股份有限公司<span class="date">2024.04 - 2024.07</span></div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>项目经历</h2>
+            <div class="project">
+                <div class="project-title">BIM+GIS智能交通可视化平台 <span class="date">2024.04 - 2024.07</span></div>
+
+                <p>负责项目技术选型。</p>
+                <ul>
+                    <li>加载互联网常用底图并且纠偏</li>
+                    <li>同屏对比</li>
+                    <li>使用geoserver连接数据库发布服务解决前端渲染大量数据卡顿的问题</li>
+                    <li>图层加载及逻辑处理、常用业务功能的封装、弹窗、高亮等</li>
+                </ul>
+            </div>
+            <div class="project">
+                <div class="project-title">BIM+GIS智能交通可视化平台 <span class="date">2024.04 - 2024.07</span></div>
+
+                <p>主要负责项目中GIS场景搭建，功能效果实现。结合three.js、mapbox，在地图上呈现完整的园区模型，树模型，车辆模型在道路上移动等效果。</p>
+                <p>技术路线：vue2 cesium</p>
+                <ul>
+                    <li>倾斜摄影、BIM模型、白膜的发布、CesiumLab、BIMAngle处理数据</li>
+                    <li>BIM模型高亮、生成模型树、模型详情展示</li>
+
+                    <li>通过QGIS处理树模型点位，实例化树模型后进行大规模树模型加载</li>
+                </ul>
+            </div>
+            <div class="project">
+              <div class="project-title">成都市城市生命安全检测线 <span class="date">2024.04 - 2024.07</span></div>
+
+              <p>主要负责项目中GIS场景搭建，功能效果实现。结合three.js、mapbox，在地图上呈现完整的园区模型，树模型，车辆模型在道路上移动等效果。</p>
+              <p>技术路线：vue2 飞渡的xxx geoserves openlayers</p>
+              <ul>
+                  <li>wms图层的加载条件渲染空间查询等</li>
+                  <li>矢量数据上图、常用gis方法的封装(地图弹框、可拖拽弹框等),图标闪烁、高亮等效果</li>
+                  <li>使用node编写脚本，批量处理excel文件坐标转换，上传数据库</li>
+                  <li>通过QGIS处理树模型点位，实例化树模型后进行大规模树模型加载</li>
+                  <li>在openlayer中通过不同方法实现高德导航线</li>
+
+              </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">某公安系统 <span class="date">2024.04 - 2024.07</span></div>
+
+            <p>主要负责项目中GIS场景搭建，功能效果实现。结合three.js、mapbox，在地图上呈现完整的园区模型，树模型，车辆模型在道路上移动等效果。</p>
+            <ul>
+                <li>常用gis效果的封装(不同效果的线、军标、预警扩散圈、雷达圈、旋转点位、旋转底座等)</li>
+                <li>图层加载的统一封装(矢量图层、影像图层、倾斜摄影等)</li>
+                <li>车辆运动</li>
+                <li>通过QGIS处理树模型点位，实例化树模型后进行大规模树模型加载</li>
+            </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">天府新区智慧管廊 <span class="date">2024.04 - 2024.07</span></div>
+
+          <p>主要负责项目中GIS场景搭建，功能效果实现。结合three.js、mapbox，在地图上呈现完整的园区模型，树模型，车辆模型在道路上移动等效果。</p>
+          <p>技术路线：vue2 superMap</p>
+          <ul>
+              <li>缓冲分析、扩散分析、限高分析、挖方、淹没分析</li>
+              <li>点线面的绘制并完成导出geojson的导出</li>
+              <li>热力图</li>
+              <li>bim</li>
+          </ul>
+      </div>
+        </div>
+
+        <div class="section">
+            <h2>教育经历</h2>
+            <div class="education">
+                <div class="degree">本科 空间信息与数字技术</div>
+                <div class="school">成都信息工程大学<span class="date">2024.04 - 2024.07</span></div>
+
+        </div>
+    </div>
+    <script>
+      // function htmlToPdf() {
+
+      //       // 获取HTML元素
+      //       const element = document.getElementById("app");
+      //       const options = {
+      //           dpi: 192,  //dpi属性的值为192，表示图像的分辨率
+      //           scale: 2, //scale属性的值为2，表示图像的缩放比例。
+      //           backgroundColor: "#fff"  //backgroundColor属性的值为"#F1F6FE"，表示图像的背景颜色。
+      //       };
+      //       // 将元素转换为canvas对象
+      //       html2canvas(element, options).then((canvas) => {
+      //           var contentWidth = canvas.width;   //获取Canvas(上面元素id 'layout-wrapper')对象的宽度
+      //           var contentHeight = canvas.height; //获取Canvas(上面元素id 'layout-wrapper')对象的高度
+      //           // 创建jsPDF对象
+      //           jsPDF = jspdf.jsPDF;  //导入jsPDF库，用于创建PDF文件
+      //           const pdf = new jsPDF('1', 'pt', [contentWidth, contentHeight]); //创建一个新的PDF对象，参数包括页面格式（'1'表示A4纸张）、单位（'pt'）和页面尺寸（[contentWidth, contentHeight]）
+
+      //           var pageData = canvas.toDataURL('image/jpeg', 1.0);  //将Canvas对象转换为JPEG格式的数据，并将其存储在pageData变量中。1.0表示图片质量
+      //           pdf.addImage(pageData, 'JPEG', 0, 0, contentWidth, contentHeight);  //将JPEG格式的图片添加到PDF文件中，图片的左上角坐标为(0, 0)，宽度为contentWidth，高度为contentHeight
+      //           pdf.save("test.pdf");
+      //       });
+      //   }
+
+
+
+
+      function htmlToPdf() {
+    const element = document.getElementById("app");
+    const options = {
+        dpi: 192,
+        scale: 2,
+        backgroundColor: "#fff"
+    };
+
+    html2canvas(element, options).then((canvas) => {
+        const contentWidth = canvas.width;
+        const contentHeight = canvas.height;
+
+        // A4 size in mm
+        const a4WidthMM = 210;
+        const a4HeightMM = 297;
+
+        // Convert mm to pt (1 mm = 2.83465 pt)
+        const a4WidthPT = a4WidthMM * 2.83465;
+        const a4HeightPT = a4HeightMM * 2.83465;
+
+        const imgHeight = contentWidth / canvas.width * contentHeight;
+        let heightLeft = imgHeight;
+        jsPDF = jspdf.jsPDF;
+
+        const pdf = new jsPDF('p', 'pt', [a4WidthPT, a4HeightPT]); // 'p' for portrait mode
+
+        let position = 0;
+
+        const pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+        pdf.addImage(pageData, 'JPEG', 0, position, contentWidth, imgHeight);
+        heightLeft -= a4HeightPT;
+
+        while (heightLeft >= 0) {
+            position = heightLeft - imgHeight;
+            pdf.addPage();
+            pdf.addImage(pageData, 'JPEG', 0, position, contentWidth, imgHeight);
+            heightLeft -= a4HeightPT;
+        }
+
+        pdf.save("test.pdf");
+    });
+}
+
+
+
+    </script>
+</body>
+
+</html>
