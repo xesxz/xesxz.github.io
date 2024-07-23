@@ -129,7 +129,7 @@ font-weight: bold;
                 <ul>
                     <li>加载互联网常用底图并且纠偏</li>
                     <li>同屏对比</li>
-                    <li>使用geoserver连接数据库发布服务解决前端渲染大量数据卡顿的问题</li>
+                    <li>重新确定技术路线使用geoserver连接数据库发布服务解决前端渲染路网数据数据量大卡顿的问题</li>
                     <li>图层加载及逻辑处理、常用业务功能的封装、弹窗、高亮等</li>
                 </ul>
             </div>
@@ -140,6 +140,7 @@ font-weight: bold;
                 <ul>
                     <li>倾斜摄影、BIM模型、白膜的发布、CesiumLab、BIMAngle处理数据</li>
                     <li>BIM模型易利数字高亮、生成模型树、模型详情展示,加载bim模型后重新调整矩阵位置等</li>
+                    <li>雨雪雾等场景加载,自定义天空样式</li>
                 </ul>
             </div>
 
@@ -157,35 +158,33 @@ font-weight: bold;
             <div class="project">
               <div class="project-title">双流区智慧水务系统 <span class="date">2024.04 - 2024.07</span></div>
 
-              <p>技术路线：vue openlayers</p>
+              <p>技术路线：vue openlayers cesium</p>
               <ul>
                   <li>矢量数据上图</li>
-                  <li>巡逻人员轨迹展示</li>
+                  <li>巡逻人员巡逻车辆轨迹展示</li>
                   <li>基于天地图的地址查询和逆地址反查</li>
               </ul>
           </div>
             <div class="project">
               <div class="project-title">成都市城市生命安全检测线 <span class="date">2024.04 - 2024.07</span></div>
 
-              <p>技术路线：vue 飞渡科技的像素流 geoserver openlayers</p>
+              <p>技术路线：vue 飞渡科技的UE像素流 geoserver openlayers</p>
               <ul>
                   <li>wms图层的加载条件渲染空间查询等</li>
                   <li>矢量数据上图、常用gis方法的封装(地图弹框、可拖拽弹框等),图标闪烁、高亮等效果</li>
                   <li>使用node编写脚本，批量处理excel文件坐标转换，上传数据库</li>
-                  <li>通过QGIS处理树模型点位，实例化树模型后进行大规模树模型加载</li>
                   <li>在openlayer中通过不同方法实现高德样式的导航线</li>
 
               </ul>
           </div>
 
           <div class="project">
-            <div class="project-title">某公安系统 <span class="date">2024.04 - 2024.07</span></div>
+            <div class="project-title">某公安指挥系统 <span class="date">2024.04 - 2024.07</span></div>
             <p>技术路线：vue cesium</p>
             <ul>
                 <li>常用gis效果的封装(不同效果的线、军标、预警扩散圈、雷达圈、旋转点位、旋转底座等)</li>
                 <li>图层加载的统一封装(矢量图层、影像图层、倾斜摄影等)</li>
                 <li>车辆运动</li>
-                <li>通过QGIS处理树模型点位，实例化树模型后进行大规模树模型加载</li>
             </ul>
         </div>
 
@@ -196,7 +195,7 @@ font-weight: bold;
           <ul>
               <li>缓冲分析</li>
               <li>基于后端的空间查询</li>
-              <li>专题图开发</li>
+              <li>专题图开发、兴趣点的图层展示、数据查询</li>
               <li>底图切换</li>
               <li>使用ws解决http不用同时加载6个以上监控的问题</li>
 
