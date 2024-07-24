@@ -575,3 +575,7 @@ viewer.imageryLayers.removeAll()
 
       tileset.root.transform = computeModelMatrix([113.31914084147262, 23.10896926740387, 0], [0, 0, 0], [2, 2, 2])
     ```
+
+
+[Geometry types 几何图形类型](http://cesium.coinidea.com/uploads/2019/06/02/5cf37e714b37217644.png)
+[[CesiumJS]Cesium教程中级7 -几何图形和外观](http://cesium.coinidea.com/topic/578.html)
