@@ -6,6 +6,7 @@ cd /Users/wk/xesxz.github.io
  fix_message="Auto commit by shell script"
 
     # 执行git命令
+    git pull
     git add --all && git commit -m "$fix_message" && git push
 
 

@@ -579,3 +579,20 @@ viewer.imageryLayers.removeAll()
 
 [Geometry types 几何图形类型](http://cesium.coinidea.com/uploads/2019/06/02/5cf37e714b37217644.png)
 [[CesiumJS]Cesium教程中级7 -几何图形和外观](http://cesium.coinidea.com/topic/578.html)
+
+
+
+  const  boundingSphere = Cesium.RectangleGeometry.createGeometry(geometry).boundingSphere
+    viewer.camera.flyToBoundingSphere(boundingSphere, { duration: 0 })
+
+
+
+PolylineGeometry -> GeometryInstance -> Primitive
+
+RectangleGeometry -> GeometryInstance -> Primitive
+
+PolygonGeometry -> GeometryInstance -> Primitive
+
+const points = viewer.scene.primitives.add(new Cesium.PointPrimitiveCollection());
+const billboards = viewer.scene.primitives.add(new Cesium.BillboardCollection());
+
