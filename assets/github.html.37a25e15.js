@@ -1,0 +1,7 @@
+import{_ as e,o as a,c as t,a as s}from"./app.ace0dae9.js";const h={},i=s(`<p>filename:vite.config.ts \u6307\u5B9A\u6587\u4EF6</p><p>https://docs.github.com/zh/search-github/searching-on-github/searching-code</p><h1 id="github-\u6DFB\u52A0ssh\u6D41\u7A0B" tabindex="-1"><a class="header-anchor" href="#github-\u6DFB\u52A0ssh\u6D41\u7A0B" aria-hidden="true">#</a> github \u6DFB\u52A0ssh\u6D41\u7A0B</h1><h3 id="_1-\u751F\u6210ssh-key" tabindex="-1"><a class="header-anchor" href="#_1-\u751F\u6210ssh-key" aria-hidden="true">#</a> 1.\u751F\u6210ssh key</h3><div class="language-text ext-text"><pre class="language-text"><code>    ssh-keygen -t rsa -C leeycheung@gmail.com
+</code></pre></div><h3 id="_2-\u6DFB\u52A0ssh-key" tabindex="-1"><a class="header-anchor" href="#_2-\u6DFB\u52A0ssh-key" aria-hidden="true">#</a> 2.\u6DFB\u52A0ssh key</h3><div class="language-text ext-text"><pre class="language-text"><code>  cd ~/.ssh
+  cat id_rsa.pub
+  \u590D\u5236\u516C\u94A5\u5230github
+</code></pre></div><h1 id="github\u8BBE\u7F6E\u4EE3\u7406" tabindex="-1"><a class="header-anchor" href="#github\u8BBE\u7F6E\u4EE3\u7406" aria-hidden="true">#</a> github\u8BBE\u7F6E\u4EE3\u7406</h1><div class="language-text ext-text"><pre class="language-text"><code>git config --global http.proxy http://127.0.0.1:7890
+git config --global -l
+</code></pre></div>`,9),c=[i];function n(r,d){return a(),t("div",null,c)}var o=e(h,[["render",n],["__file","github.html.vue"]]);export{o as default};

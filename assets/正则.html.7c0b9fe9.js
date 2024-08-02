@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,b as o}from"./app.ace0dae9.js";const r={},s=o("p",null,"\u5339\u914D\u591A\u4E2A\u5173\u952E\u5B57 /gisserver|tileConf|orange/",-1),c=[s];function n(a,l){return t(),_("div",null,c)}var f=e(r,[["render",n],["__file","\u6B63\u5219.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as r,o as a,c,b as e,e as o}from"./app.ace0dae9.js";const t={},n=e("h1",{id:"performance",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#performance","aria-hidden":"true"},"#"),o(" performance")],-1),s=[n];function _(d,f){return a(),c("div",null,s)}var m=r(t,[["render",_],["__file","performance.html.vue"]]);export{m as default};

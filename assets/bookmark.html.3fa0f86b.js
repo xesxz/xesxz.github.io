@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as a,d as t,r as c}from"./app.ace0dae9.js";const n={};function _(m,s){const o=c("bookmark");return r(),a("div",null,[t(o)])}var l=e(n,[["render",_],["__file","bookmark.html.vue"]]);export{l as default};

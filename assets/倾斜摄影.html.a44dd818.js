@@ -1,0 +1,27 @@
+import{_ as n,o as s,c as a,a as t}from"./app.ace0dae9.js";const p={},o=t(`<p>\u5927\u7586\u667A\u56FE vs ContextCapture\uFF08Smart3D\uFF09</p><p>http://doc.tuxingis.com/zhuanti/guide/ https://blog.csdn.net/DarkAfraid/article/details/121101465</p><div class="language-javascript ext-js"><pre class="language-javascript"><code>    <span class="token function">handleop1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">const</span> viewer <span class="token operator">=</span> earth<span class="token punctuation">.</span>viewer
+      <span class="token keyword">let</span> tiles <span class="token operator">=</span> viewer<span class="token punctuation">.</span>scene<span class="token punctuation">.</span>primitives<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Cesium3DTileset</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token comment">// url:&#39;http://192.168.20.153/data/ob5/tileset.json&#39;,</span>
+      url<span class="token operator">:</span><span class="token string">&#39;http://192.168.20.153/data/nnnnn/tileset.json&#39;</span><span class="token punctuation">,</span>
+          <span class="token comment">// url:&#39;/chengdu/tileset.json&#39;,</span>
+          <span class="token comment">// url:&#39;https://zouyaoji.top/vue-cesium/SampleData/Cesium3DTiles/Tilesets/dayanta/tileset.json&#39;,</span>
+      show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token comment">//</span>
+  tiles<span class="token punctuation">.</span>readyPromise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">currentModel</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> cartographic <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartographic<span class="token punctuation">.</span><span class="token function">fromCartesian</span><span class="token punctuation">(</span>currentModel<span class="token punctuation">.</span>boundingSphere<span class="token punctuation">.</span>center<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> surface <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">fromRadians</span><span class="token punctuation">(</span>
+      cartographic<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span>
+      cartographic<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span>
+      cartographic<span class="token punctuation">.</span>height
+    <span class="token punctuation">)</span>
+    <span class="token keyword">const</span> offset <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">fromRadians</span><span class="token punctuation">(</span>cartographic<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span> cartographic<span class="token punctuation">.</span>latitude<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> translation <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">subtract</span><span class="token punctuation">(</span>offset<span class="token punctuation">,</span> surface<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Cartesian3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    currentModel<span class="token punctuation">.</span>modelMatrix <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Matrix4<span class="token punctuation">.</span><span class="token function">fromTranslation</span><span class="token punctuation">(</span>translation<span class="token punctuation">)</span>
+    viewer<span class="token punctuation">.</span><span class="token function">zoomTo</span><span class="token punctuation">(</span>currentModel<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div>`,3),e=[o];function c(u,l){return s(),a("div",null,e)}var k=n(p,[["render",c],["__file","\u503E\u659C\u6444\u5F71.html.vue"]]);export{k as default};

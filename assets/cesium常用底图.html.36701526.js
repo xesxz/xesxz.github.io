@@ -1,0 +1,4 @@
+import{_ as s,o as a,c as n,a as t}from"./app.ace0dae9.js";const e={},p=t(`<div class="language-javascript ext-js"><pre class="language-javascript"><code> <span class="token keyword">let</span> osm <span class="token operator">=</span> Cesium<span class="token punctuation">.</span><span class="token function">createOpenStreetMapImageryProvider</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&#39;https://a.tile.openstreetmap.org/&#39;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>`,1),o=[p];function c(r,l){return a(),n("div",null,o)}var u=s(e,[["render",c],["__file","cesium\u5E38\u7528\u5E95\u56FE.html.vue"]]);export{u as default};

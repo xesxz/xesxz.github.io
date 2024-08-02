@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,b as a}from"./app.ace0dae9.js";const c={},o=a("p",null,"npx create-ol-app my-app --template vite",-1),n=[o];function r(s,l){return t(),_("div",null,n)}var i=e(c,[["render",r],["__file","\u6A21\u7248.html.vue"]]);export{i as default};

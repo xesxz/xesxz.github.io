@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as t,b as o}from"./app.ace0dae9.js";const _={},c=o("p",null,"DELETE FROM quotes WHERE id IS NULL; SELECT setval('quotes_id_seq', (SELECT MAX(id) FROM quotes)+1)",-1),a=[c];function n(r,l){return s(),t("div",null,a)}var d=e(_,[["render",n],["__file","sub.html.vue"]]);export{d as default};

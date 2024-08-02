@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    map提交表单 
+  </title>
+</head>
+
+<body>
+
+  <form action="https://jsonplaceholder.typicode.com/posts/" onsubmit="return post()">
+    接受协议
+    <input type="checkbox" error="请接受协议">
+    我是学生
+    <input type="checkbox" error="网站只对学生开放">
+    <input type="submit">
+  </form>
+
+  <script>
+    function post() {
+      const list = document.querySelectorAll("[error]")
+
+      const map = new Map()
+
+      list.forEach(item => {
+        map.set(item, {
+          error: item.getAttribute('error'),
+          status: item.checked
+        })
+      })
+
+      const toArray = [...map]
+      return toArray.every(([ele, config]) => {
+        config.status || alert(config.error)
+        return config.status
+      })
+
+    }
+  </script>
+</body>
+
+</html>

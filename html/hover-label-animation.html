@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        svg:hover {
+            animation: ov-wrench 2.5s ease infinite
+        }
+
+        @keyframes ov-wrench {
+            0% {
+                transform: rotate(-12deg);
+            }
+            8% {
+                transform: rotate(12deg);
+            }
+            10%, 28%, 30%, 48%, 50%, 68% {
+                transform: rotate(24deg);
+            }
+            18%, 20%, 38%, 40%, 58%, 60% {
+                transform: rotate(-24deg);
+            }
+            75%, 100% {
+                transform: rotate(0deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <svg aria-hidden="true" width="19.2" height="19.2" viewBox="0 0 24 24" fill="currentColor"
+         class="ov-icon ov-wrench ov-hover" style="font-size:1.2em;">
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path d="M21 18H6a1 1 0 000 2h15v2H6a3 3 0 01-3-3V4a2 2 0 012-2h16v16zm-5-9V7H8v2h8z"></path>
+    </svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as _,b as e}from"./app.ace0dae9.js";const a={},o=e("p",null,"supabase\u65B0\u589E\u5B57\u6BB5",-1),c=e("p",null,"ALTER TABLE your_table ADD COLUMN new_column TEXT;",-1),n=[o,c];function l(r,u){return t(),_("div",null,n)}var d=s(a,[["render",l],["__file","supabase.html.vue"]]);export{d as default};

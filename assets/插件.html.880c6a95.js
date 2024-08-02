@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,b as n}from"./app.ace0dae9.js";const o={},c=n("p",null,"unplugin-vue-components",-1),s=[c];function r(a,l){return t(),_("div",null,s)}var i=e(o,[["render",r],["__file","\u63D2\u4EF6.html.vue"]]);export{i as default};

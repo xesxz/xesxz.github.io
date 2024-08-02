@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,b as c}from"./app.ace0dae9.js";const o={},l=c("p",null,"https://blog.gtwang.org/linux/speedtest-cli-linux-command/",-1),n=[l];function _(a,r){return t(),s("div",null,n)}var d=e(o,[["render",_],["__file","speedtest-cli.html.vue"]]);export{d as default};
