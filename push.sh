@@ -7,6 +7,7 @@ cd /Users/wk/xesxz.github.io
 
     # 执行git命令
     git pull
+    
     git add --all && git commit -m "$fix_message" && git push
 
 
